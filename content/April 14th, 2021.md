@@ -1,0 +1,14 @@
+---
+tags: [career, science]
+---
+- stop thinking about the effects or how the degree might look. Its about what you want to learn.
+    - I'd really like to do the major minor structure
+    - https://master-energy.ethz.ch/studies.html
+    - The US looks incredibly unlikely. Need a pros and cons list
+    - plasma physics
+    - Is my goal to make a scientific breakthrough?
+    - Computational physics?
+- The bind energy for hydrogen is stronger than helium. So on conversion, that excess energy is released.
+    - The curious case of cold fusion
+    - 3D printing, could that contribute to growth of startup type manufacturing?
+    - liquid fluoride thorium reactor

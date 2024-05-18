@@ -1,0 +1,14 @@
+- #kubernetes #networking 
+- #Author [[Kelsey Hightower]]
+- Chapter 1 
+    - [[May 19th, 2021]]
+    - __With a mutable system, the current state of the infrastructure is not represented as a single artefact, but rather an accumulation of incremental updates and changes over time. On many systems these incremental updates come from not just system upgrades, but operator modifications as well__
+    - An example, log into a container, pull down the service, update the service, start it again. Or, build a whole new container image push it to a registry pull and restart
+        - The difference is in the record. There is a definite artifact of the change.
+    - Is the power of declarative configuration in the ability to have one 'recipe' or implementation steps?
+        - Does not have to be executed to be understood
+        - Its easier to rollback as its the reverse of the simple declarative statement. Its often not as clear in the imperative case.
+    - Self healing or a constant feedback loop to what the user defines as equilibrium
+    - De coupled architecture
+        - Similar to how API provide a buffer between implementer and consumer, load balancers provide a buffer between the user and running instances of a service. A user isn't tied to particular instance which is essential for scaling 
+- [[May 25th, 2021]] Cancel Apple TV

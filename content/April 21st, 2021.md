@@ -1,0 +1,19 @@
+- #spelunking 
+    - The entry point to ISD features (ISD vs ISDP)?
+    - After apply the plugin deployPipelines is configured[*](((3bzecuuN0))) {{[[r/moved]]}}
+    - Dependency injection
+    - Groovy closure
+    - Pipeline run ref ? 
+    - Create watch
+    - Gradle named domain object container allows the creation of a collection of objects provided a name property in the object constructor.
+    - Create a pipeline container of type `DefaultPolymorphicDomainObjectContainer<Pipeline>`
+    - register the two pipeline type factories. 
+    - Add the pipeline container to the extensions object
+    - client create takes in an `IsdpResource` type
+        - Uses the methods to create a custom namespaced object
+        - Create the resource and watch it
+    - convert dsl to api (`IsdpResource` type)
+- [[health]] [[nutrition]] #youtube [rhonda patrick on sleep](https://www.youtube.com/watch?v=76z4UPt-OME) 
+The glymphatic system, activated when you sleep particularly deep sleep series of vessels in the brain that push out waste products. Including plaques. Omega 3 fatty acids shown to improve the glymphatic system. In mice, and with small studies. 
+- [[thoughts 🤔]] #education It seems that its not that hard to get left behind in education, any misunderstanding can compound (similar to what Khan talks about of the who I admire podcast). Part of the motivation in getting through the physics self study is a rage against the idea that I'm not smart enough to understand. To see if its just building up my own intuition in my own way, not that speed and acceptance of what is presented is the bar to be met.
+- [[thoughts 🤔]] how do trends catch on? is there a patient zero, for instance, foldable bikes being more common with youths.

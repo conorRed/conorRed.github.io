@@ -1,0 +1,3513 @@
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>02/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">02/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Wed 02 Aug 2023
+09:07:42 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>Random variables have nothing to do with the distribution of
+probability across its events, thats done in the definition of the
+probability space.</p>
+<h2 id="research">Research</h2>
+<p>Trying to understand the standards doc methodology and answer the
+question, given some function, what is the type of uncertainty analysis
+we must do on it with justifications for doing so.</p>
+<p>I think Helton would say that the uncertainty analysis performed in
+the standards doc determines moments of the CDF that would constitute a
+‘complete’ analysis.</p>
+<p>Uncertainty propagation with the ‘method of moments’ (Morgan).</p>
+<p>Reading through Morgan now, which seems like a more introductory
+version of the standards. Hopefully it can provide a link between all
+three documents.</p>
+<p>A first order approximation is whats done in the standards doc, a
+Gaussian where the first moment of y is take. The expected deviation of
+y from its base case is zero the base x’s expectations can be used to
+measure the expectation of the output.</p>
+<ul>
+<li>I don’t know where the Taylor series fits into things yet.</li>
+<li>I know that what I consider a sensitivity anlaysis is the most basic
+unceratinty approx.</li>
+<li>Then we go to the standards unceratinty approx which tries to
+incorporate the uncertainty of the input to get combined
+importance.</li>
+</ul>
+<p>Whats interesting here is whether or not one needs to understand the
+function y. In my case, its feasible to understand all functions y, but
+what if we take the default of not wanting to understand them?</p>
+<p>(Morgan ) has nice visual of creating a ‘decision’ tree for inputs,
+its a sequential tree that represents a combination of each of the
+inputs say, using there middle, max and lower bounds. Each leaf can be
+assigned a probability then and the CDF of Y can be constructed from the
+probability value pair at the leafs. MC method is this on steroids. We
+create loads of paths and weight the y value to how many paths we’ve
+gone down.</p>
+<p>Morgan also shows a results that CDF’s can mislead. Some good stuff
+on visualisation.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>03/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">03/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Thu 03 Aug 2023
+08:57:25 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="research">Research</h2>
+<p>Continuing on from yesterday. Its important to highlight that ‘method
+of moments’ and sensitivity analysis, gaussian approximation are all
+trying to describe py or more specifically the CDF of y. I think this is
+the point I’m trying to get across.</p>
+<p>What is the rationale here for each analysis. I need to describe
+simple vs a more complicated function. When the surface is planar,
+nothing past a Gaussian is really needed. This might involve why Taylor
+series are needed sometimes.</p>
+<p>This is what I’m going to do for every <span
+class="math inline"><em>y</em></span> I find!</p>
+<ol type="1">
+<li>A basic sensitivity analysis</li>
+<li>Gaussian approximation to incorporate uncertainty of parameter.</li>
+<li>MC Sampling. Due to lack of knowledge about covariance.</li>
+<li>Importance with covariance using (Morgan).</li>
+</ol>
+<p>I’ve seen some stuff about regression for sensitivity analysis.</p>
+<h3 id="taylor-series">Taylor Series</h3>
+<p>Generalization of linearization, which makes sense if you think about
+it.</p>
+<p>What is the taylor expansion for a multivariate function?</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>08/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">08/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Tue 08 Aug 2023
+07:17:53 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I was trying to find where before I’d written about interest
+rates and time horizons. Whats interesting about the crisis is that no
+one understood really the instruments being created, like some
+Moloch.</p>
+<h2 id="research">Research</h2>
+<ul>
+<li>Trying to get back into things today.</li>
+<li>I’m unsure of what I need to do next, Gaussian approximations for
+fuel production?</li>
+</ul>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>09/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">09/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Wed 09 Aug 2023
+09:32:16 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="research">Research</h2>
+<h3 id="whats-my-argument-for-the-methodology-im-proposing">What’s my
+argument for the methodology I’m proposing?</h3>
+<p>While there are many sources of uncertainty in an LCA, the LCI is a
+model created to calculate an output. This enables it to be analysed as
+a function. If the output of this function is considered a random
+variable. Well known mathematical techniques, like the ‘method of
+moments’ are used to approximate the probability distribution function
+of this function. The output of the model is also used in decision
+support. We want to have numerical measures of importance of our input
+parameters that have some intuition for communication to decision
+makers. Gaussian approximations aim to incorporate the uncertainty of
+the input parameter and the sensitivity of that parameter to convey, as
+a single number the importance of the variable. This is a numerical
+representation of the ‘importance’ defined by hauschild in their
+uncertainty chapter.</p>
+<h3 id="when-to-use-mc-sampling">When to use MC sampling?</h3>
+<p>Objectively, the functions evaluated in this LCI are not complex.
+Monte Carlo sampling may be over kill in approximating the distribution
+for y as a random variable. What it is useful for is implicitly dealing
+with covariance. We trade computing power for labour in determining
+covariance between input parameters.</p>
+<ul>
+<li>At the stage now where I can do MC on the fuel production process.
+Just need to figure out the distributions to use.</li>
+</ul>
+<h3 id="lci-and-building-terminology">LCI and building terminology</h3>
+<p>The functional unit for the fuel production is currently kJ of
+energy. This probably needs to be changed, but is just a multiplicative
+factor (hopefully). The output of the LCI is just related to elemental
+flows though. I think its not too distracting to generalise the output
+of the LCI. To consider the LCI as a function.</p>
+<p>I’m constantly questioning whether what I say is understandable or
+has been established.</p>
+<p>Each section should build on last.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>10/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">10/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Thu 10 Aug 2023
+09:50:36 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I listened to Matt Taibi this morning. He said that, when he
+was writing on the crisis, someone told him to look at it as a big crime
+rather than governed by laws of economics. I think the latter part here
+is true and something I’m trying to get used to. I think the former is
+rather just looking at it from races to the bottom (although greed
+definitely plays a role).</p>
+<p>I’ve often had this thought that I’m not really supposed to be where
+I am. That I’ve exceeded expectations of what I could be. This sounds
+more dramatic than it actually is. I just mean that I’m a very bog
+standard person by a variety of metrics yet I am different or an outlier
+in the circles I’m surrounded by or were surrounded by. I shouldn’t
+really be reading what I read etc. no one really guided me, I did it
+myself. The problem is, I do it poorly, I’m constantly regressing to
+that mean. Maybe that’s why I feel like giving up sometimes, its that
+regression thats inherent in me. Maybe thats what I need to consistently
+fight and it will never go away. Or maybe viewing my ‘regular’ self as
+inferior is unhealthy.</p>
+<h2 id="research">Research</h2>
+<ul>
+<li>Need to try and get some input distributions to use and rationale
+behind them.</li>
+<li>Probably need to sharpen up the code a small bit. Should I work on
+the naphta and propane purification parts?</li>
+<li>Whats next steps, how do I move towards finishing the disseration?
+What is it I’m missing at the moment?</li>
+</ul>
+<p>The three broad categories of uncertainty in the LCA literature don’t
+seem to offer more clarity as it seems that the same uncertainty goes
+under different names in different reviews (igos?). Igos defines the
+uncertainty classificaiton similar to warmink. Maybe this claim can’t be
+backed up. Maybe its more that the modelling route has a better
+framework.</p>
+<p>This morning I’m reading lit to back up claims about need for
+uncertainty in my introduction. As well as just general reading.</p>
+<p>Struggling to figure out where I am in the structure. Need to rethink
+points to be made a bit I think. Just to inform reading.</p>
+<p>Tried to understand fuzzy numbers again, or at least why they offer
+anything over probability distributions. Failed.</p>
+<blockquote>
+<p>ISO 14040 describes the ”principles and framework for LCA”, while the
+ISO 14044 “specifies requirements and provides guidelines” for LCA</p>
+</blockquote>
+<p>That probability is the only language for uncertainty is disputable.
+See Ross and Booker.</p>
+<p>My hope is to cut the bullshit linguistic definitions pretty quickly,
+at least provide simpler definitions.</p>
+<h3 id="points-to-be-made">Points to be made</h3>
+<ul>
+<li>Why uncertainty analysis?
+<ul>
+<li>What an LCA is, what the TCD LCA is and how it contributes towards
+liams and arons goals of transparent LCA.</li>
+<li>What an LCI is and how it relates to deterministic computer
+models.</li>
+<li>Why uncertainty is important for deterministic decision support
+models.</li>
+</ul></li>
+<li>What is an uncertainty analysis generally.</li>
+<li>What is the current uncertainty analysis done in LCA’s.</li>
+<li>What uncertainty analysis will be done here.</li>
+</ul>
+<p>Watching</p>
+<p>https://www.youtube.com/watch?v=L7bYsHBgb-M</p>
+<p>https://www.youtube.com/watch?v=cU4Cd8CGiaM&amp;t=525s</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>11/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">11/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Fri 11 Aug 2023
+06:41:39 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <ul>
+<li>I should try and produce graphs today to actually put in my
+paper.</li>
+<li>If you feel you can’t put any bounds on the input, does this mean
+you shouldn’t even try at all?</li>
+<li>Need to look at answering the question, how do I use the code?</li>
+</ul>
+<p>Listening to Sivers on Ferris, talking about network security. I need
+to start looking at DevOps roles/ network engineer roles.</p>
+<p>Sivers uses the idea of the ‘press secratary’ in the brain, that
+beliefs are so transitory and not objective, you can pick and choose
+them. Even things you tell yourself. I feel this sometimes when i feel I
+‘must’ take the stoic mindset because its the ‘right’ answer. None of
+the answers are right, you kind of just have to pick what you want.
+Sivers says that once you choose a belief you can find evidence for it
+(as you can with any other one).</p>
+<p>They also talk about having a ‘virtual mentor’ almost like the rubber
+duck in programming. Imagine asking your mentor to solve your problem,
+trying to account for what they might say to obvious points that come
+up. Doing this exercise normally solves your problem.</p>
+<p>‘Good enough’ is an important heuristic that they discuss, choosing
+what it is you want to optimise in your life. Tooze talks about this too
+for his work.</p>
+<h2 id="research">Research</h2>
+<p>Code revolves around functions or ‘ys’.</p>
+<p>Going to try work on some of the methodology section today.</p>
+<p>Specifying y’s is hard, but that’s ultimately what I’’m trying to
+generalise to.</p>
+<p>The third ‘point’ in the intro is to use well known techniques for
+uncertainty analysis rather than the vague linguistic terminology of LCA
+stuff becuase it doesn’t offer any form of representation apart from
+just stating it, its not very actionable. There might be a crossover
+here with uncertainty analysised in the IPCC report where they use
+linguistic forms of uncertainty.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>12/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">12/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Sat 12 Aug 2023
+06:16:49 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>reading a history of christianity this morningg.</p>
+<p>The ‘giant’ task occupying the church at the time of Origen is
+“illuminating the significance of Jesus Christ in the divine plan”?
+p.149.</p>
+<p>Its a complicated web of thought, the book is so dense. I guess what
+I’m searching for is questions about Christianity. I just can’t relate
+to the motivations to understand the ‘book’ at all. Or maybe its just a
+lack of effort in empathising.</p>
+<p>Theres a lot there, I feel, in terms of human cognitive biases that
+have become so popular. The need to create narratives and the difficulty
+of changing ones beliefs when they are established. A ‘crisis’ normally
+occurs with this need to change ones beliefs normally trying to find
+evidence, or ‘fit’ the evidence to your current beliefs or some slight
+mutation of them. It seems a bit shit to just put it all down to human
+nature but that does seem to be the case of most human history. It’s a
+reason why this new ideas in psychology, like that of the ‘press
+secretary’ are so revealing about ourselves. That we can’t even trust
+ourselves is a scary notion but what would be scarier would be if we
+could do nothing about it.</p>
+<p>https://www.youtube.com/watch?v=cDa4vpkNKeQ</p>
+<ul>
+<li>The glamour, the charisma of the Greek and Roman world seemed a
+world full of colour vs what the world of Christianity seemed to be,
+grey and depressing. The former more appealed to him as a child and
+growing up.</li>
+<li>Found the idea of ‘inhabiting’ the heads of the Romans and greeks
+quite distressing over a time. For instance, Caesar considered it an
+achievement to slaughter a million Gauls.</li>
+<li>He began to ask himself: “Why do I find this disturbing?”</li>
+<li>Religio was a bond from the people to the gods. The idea of religios
+changed with the Christians, they maintained just one religios, one bond
+to God.</li>
+<li>Holland says that Augustine sets up this counterpoint between the
+‘cyclulum’ and religio. Twin dimensions, that the secular and religious
+worlds are separate?</li>
+<li>He was affected by a trip to Iraq, he saw a lot of brutality over
+the symbol of the cross.</li>
+</ul>
+<p>Tom Holland talks about ‘original sin’ from the point of view of
+those that deny it. Nowadays, what is virtuous is that which helps
+others. If you deny original sin, you’re saying that you can be washed
+of your sins, that you can become ultimately virtuos. This implies that
+those who aren’t virtuous need to ‘try harder’ you dont acknowledge
+fault in yourself or think that you too are subject to the same
+fancies.</p>
+<p>I think its interesting to see the influence that Christian thought
+has on modern culture but I don’t believe its the way forward. I don’t
+believe that we should keep looking backwards for wisdom all the time.
+Especially about new things that our ancestors did not encounter.</p>
+<p>Reading history of thermodynamics from Julian Barbour.</p>
+<p>A caloric, developed by Lavoisier and Laplace was thought to be a
+substance that occupied things which allowed them to do work. It doesn’t
+seem there was any notion of conservation, just that we drew on some
+infinite resource of this substance.</p>
+<p>Carnot sees heat everywhere in nature he says:</p>
+<blockquote>
+<p>It causes the agitations of the atmosphere, the ascension of clouds,
+the fall of rain . . . the currents of water which channel the surface
+of the globe . . . Even earthquakes and volcanic eruptions are the
+result of heat.</p>
+</blockquote>
+<blockquote>
+<p>The object of heat-engines is to “develop this power, to appropriate
+it to our purposes”</p>
+</blockquote>
+<blockquote>
+<p>In order to consider in the most general way the principle of the
+production of motion by heat, it must be considered independently of any
+mechanism or any particular agent. It is necessary to establish
+principles applicable not only to steam engines but to all imaginable
+heat-engines, whatever the working substance and whatever the method by
+which it is operated</p>
+</blockquote>
+<p>This reminds me of a general theory like computation, where you
+generalise from instances. It’s interesting to note that Carnot foresaw
+that these engines could make completely new jobs or industry.</p>
+<p>What the hell are my goals?</p>
+<h2 id="research">Research</h2>
+<p>I need to get better at convincing myself that ‘this is something I
+like doing’ similar to Sivers beliefs thing yesterday. I say it but I
+don’t do the positive talk in my head, so hopefully can try improve on
+this.</p>
+<p>Working through the methodology a bit.</p>
+<h3 id="research-objectives-section">Research objectives section</h3>
+<ul>
+<li>I think its worth stating that one of the objectives is to produce
+something useful.</li>
+<li>Morphing objectives with this in mind, consultation with Liam and
+Aron.</li>
+</ul>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>13/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">13/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Sun 13 Aug 2023
+06:48:35 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="summary-of-week">Summary of week</h2>
+<ul>
+<li><p>I can’t really pin down my goals.</p></li>
+<li><p>I’m not reading in my off time.</p></li>
+<li><p>I think more productive self-talk, that I like this or can do
+this is important.</p></li>
+<li><p>Need a pressure to produce written material like blog posts.
+Going to try and do one for Ireland.</p></li>
+<li><p>In some sense, I know what I want to do, what I want to learn, I
+just don’t have a way set up to get there.</p></li>
+<li><p>I’ve found that I say I’ll do a lot of positive psychology stuff,
+but I never do it.</p></li>
+<li><p>It’s important to apply discipline to those things I don’t feel
+‘deserve’ it, like self care or positive self-talk.</p></li>
+<li><p>I already have some goals, they’re just not necessarily my
+favourite, that doesn’t mean I shouldn’t prioritise them. Stop beating
+yourself up Conor.</p></li>
+</ul>
+<h2 id="goals-for-week">Goals for week</h2>
+<ul>
+<li>Write disseration.</li>
+<li>Prepare for interview.</li>
+<li>Spend some time on Irish history if I can.</li>
+<li>Get in some solid gym sessions.</li>
+<li>Write every day. If nothing immediately pops to mind to write about,
+try and dig into the memory of some problem or thing you can’t recall
+immediately.</li>
+</ul>
+<h3 id="what-is-the-premise-of-frankss-commonon-patterns-of-nature">What
+is the premise of Franks’s ‘commonon patterns of nature’?</h3>
+<p>Frank takes this viewpoint that what probability distributions tell
+us about nature are related to <em>information</em> not to anything
+physical about nature. That when some process (made of subprocesses)
+converges to some distribution, this distribution says something about
+the constraints on complete randomness in that process. This is where
+you get the overlap with information theory. You can use the concept of
+Shannon’s entropy to say when a process is random.</p>
+<blockquote>
+<p>In each problem, the ultimate pattern arises from the particular
+information preserved in the face of the combined fluctuations in
+aggregates that decay all nonpreserved aspects of pattern towards
+maximum entropy or maximum randomness. My novel contribution is to apply
+this framework of entropy and information in a very simple and
+consistent way across the full range of common patterns in nature.</p>
+</blockquote>
+<p>This viewpoint that we’re trying to extract information from nature
+is interesting.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>14/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">14/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Mon 14 Aug 2023
+05:56:37 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="log">Log</h2>
+<p>I’m trying a new thing of writing first thing in the morning.</p>
+<p>I’m often dogmatic in my thoughts. In some arenas, overarching ideas
+and calls to strong action causes a strong aversion but the same ideas
+on a smaller scale, like not eating carbs, or Stoicism occupy my head as
+all encompassing beliefs. An example of the first kind might be
+stringent nationalism or and ideology like socialism. Sivers talks about
+picking a choosing beliefs that suit you, but ultimately how can we tell
+what ‘suits us’. I guess, inherently I view myself as a tabula rasa,
+with no inherent preferences. That I look externally for guidance. At
+least for some of the major thoughts, this seems to be the case. Some of
+my happiest times is when I’m studying. The idea that your task is
+simple, just read this book for the next two hours etc. Similarly some
+of my best days are having spent all day working through a topic. These
+days don’t really come about by happenstance. There is some cohersion in
+the intial push to make me do these things. What Sivers might say is
+that initial reason as to ‘why’ you wanted to study the subject is the
+driver. In order to then, attain the knowledge you knew that you must
+study or read.</p>
+<p>To focus on that initial ‘why’. Sometimes it doesn’t feel that strong
+and I have no idea why. Sometimes I’m really curious about something and
+other times (which seem to be much longer) I feel not much when I think
+about them. Often times its the challenge that such a subject presents.
+To get a bit more concrete, if I’m reading something like ‘Crashed’ the
+gaps in my knowledge and concepts I hold in my head can be so great that
+the information is overwhelming. This causes that split between giving
+up/ why bother and starting from a simpler case. Sometimes I choose the
+latter, but it can be more painful than just relaxing into the
+former.</p>
+<p>When I feel I’m ‘losing track’ or not being who I want to be, I
+search for some ‘tenets’ to guide me back on the road. These tenets
+aren’t objectively true, we pick them so it can be difficult to
+rationalise them when you’re off the road. This is where positive
+self-talk can help. For instance, saying that this is what one likes to
+do. When I feel lost, nothing seems interesting, I feel somewhat
+nihilistic. It’s about just guiding one back to some common ground even
+if it doesn’t matter just because you know it will make you feel
+better.</p>
+<p>Other times you can use emotion by bringing to mind those you admire
+or aesthetics and feelings that motivate you (say, like a mood
+board).</p>
+<p>This might be similar to the notions of ‘games’ in life and the ones
+you choose to play.</p>
+<p>I listened to a <a href="https://youtu.be/XYHk_TieMLQ">talk</a>
+yesterday about Kierkegaard. It said that what one should seek is
+‘understanding’, not just some technical analysis of the objective truth
+of the world. Not to just read from the book of nature. I like this idea
+although like most things I’m not too sure what to do with it.</p>
+<p>Listened to a good podcast (panscycast) on Kierkegaard. I think
+Kierkegaard’s leap of faith refers to any set of values you believe in,
+not just Chrisitanity. Also, his idea of the aesthetic seems to be
+similar to the social function of things like religion. Not everyone
+necessarily believes but still would say they do by pure social
+factors.</p>
+<p>Utilitarianism is interesting, and Bentham. It kind of structures
+itself as scientific or rational morals. It seemed Hume and Bentham
+wanted to remove emotion from the arena of social morality, something
+I’m trying to do in my reading of irish history.</p>
+<p>Listening to Hanson on the ‘sacred’, the idea of construed level
+theory reminds me of the emotions that appear in our subconscious when
+we think of ‘far away’ things. Like the ‘nation of Ireland’. Interesting
+point made as well that often people hold their ultimate reasoning for
+being in a field as this fundamentally emotional sacred thing but their
+day to day is often not that. Maybe this is where the sacred is useful.
+For my work, for instance, I’m working on a particular uncertainty
+analysis with all its bells and whistsles, but if you asked me why I’m
+doing it my ultimate reasons would be more abstract such as the positive
+effects of making the right decisions, reasoning about the unknown etc.
+This is always something I’m searching for in what I do and I think its
+similar to creative contexts that Nielsen talks about.</p>
+<h2 id="section"></h2>
+<h2 id="research">Research</h2>
+<p>Linguistic formulations are not useful in relation to the goals
+defined in this paper of clear representation to decision makers.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>15/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">15/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Tue 15 Aug 2023
+06:14:19 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="log">Log</h2>
+<p>Yesterday, I was chatting to Dad and he said that I’ve such a clear
+idea of what I want to do, which is not the case. I started the Msc in
+part to get this clarity and its definitely helped but I still don’t
+have any idea of where I might contribute.</p>
+<p>This research project has taught me that an area like risk could be
+useful. It’s somthing that is not widely appreciated or at least is not
+a commonly known field. I also think that people might not find it
+overly interesting, a bit like power electronics. Because I do find it
+interesting that might mean I’m a good fit, even if I’m not the most
+talented at it.</p>
+<p>In saying that, it’d be nice to have a problem to solve. Likely, with
+no initial preference I should just pick any problem that I feel I can
+contribute too. This isn’t the inspiration I might have hoped but, once
+again, projecting a fantasy onto reality might just hinder me from doing
+what I might enjoy in the long run rather than acting as a heuristic for
+it.</p>
+<p>‘Energy innovation’ and working on Science’s for new energy or the
+foundations for Thermodynamics would be cool, but this just doesn’t
+exist. It’s an idealised notion in my head. I’d like to contribute to
+Science and being in that sphere but I can’t always project what I think
+thats like on to it. Sometimes, I see it as a failure if I’m not working
+towards this Star Trek/Sagan higher ideal.</p>
+<p>This ideal, well, what is it? I read Carl Sagan in my teens and liked
+the way he saw things. I kind of moved into the intelligence as an
+escape realm. Where I figured reading and learning would make me look
+smart and be smart so that I could be smarter than other people, feel
+better than them, because I didn’t really feel great about myself I
+suppose. Sagan represents this ideal scientist, full of wonder, what I
+wish I was. I’m not too sure why, I can’t really think or hold in my
+head why.</p>
+<p>Another impactful moment is the pale blue dot speech at the end of
+Cosmos. Watching this clarified for me that it was silly to not be
+contributing to something I loved. That these problems I’ve created for
+myself were not real problems.</p>
+<p>Star Trek then also offers an escape, to be in a world like that
+where intellect is the superhero. Being a scientist seemed to me when I
+was young as really understanding the world, writing equations etc.
+Unfortunately, it did not come naturally to me. It’s only now I realise
+it doesn’t come naturally to a lot of people. This alone is not reason
+to give up but it may be a reason that its not the career for you.</p>
+<p>Maybe it all comes down to wanting to be a person myself in my teens
+would like or feel had achieved, which is odd because theres so much
+that person doesn’t know about me now or about the world in general. It
+might be time to let this ideal standard (which I can’t even define) go,
+or redefine it for the way the world is now, who I am now. I can take
+the positives from it, use Sagan as inspiration, but I will never be
+Sagan, I will never be Tooze, I’ll never be any of the people I admire.
+That’s not a failure. Holding myself back because of this heuristic I
+can’t quite define is a problem.</p>
+<p>I can’t help but feel that this notion of what I ‘should’ be doing
+seeps into the decisions I make almost daily, especially what I work on.
+Maybe what this is ‘emotion’ thats why its hard to pin down. While it
+can be good its similar to looking at how one ‘feels’ rather than the
+facts. Say with me and weight loss and food. I might feel bloated or
+generally feel ‘fat’ or weak or whatever but if the numbers are going up
+in the gym, which I would say is my goal then that feel is ‘wrong’ for
+the general outcome I’m looking for.</p>
+<p>I listened to Hanah Ritchie this morning on the 80,000 hours podcast.
+She kind of frames the ‘climtae change’ problem as one of international
+development which I think is the best way to look at it. She talks a lot
+about crops yields in Africa and how its important to improve
+productivity there.</p>
+<p>She also uses the Ozone layer example to show that we need to create
+markets for the better options, this puts more power in the hands of
+developed countries to create these markets for things like electric
+cars, vegan foods etc. offering incentives for companies to enter these
+markets. It seems to me a good thing to do as a priveledged person or
+nation to help.</p>
+<p>Its worth putting time aside to get some examples in my brain like
+Ritchie talks about here. Where market incentives work, what the problem
+in Africa, in terms of yields is etc.</p>
+<p>I’ve been watching this video from Angela Collier about lemon water
+and how your stomach acid will just neutralise it so its just always
+water. This is despite the fact that people say it works. So you can say
+it literally makes no difference empirically but then people say its
+worked wonders for them. It reminds me of how I went off carbs.
+Empirically or scientifically it might not have been the carbs at all
+that got me shredded but thats what I think did it so you generate this
+notion, thats not backed by solid Science in your mind.</p>
+<p>Decision problems, languages, that is a set representation where the
+set qualifier is some indicator function is the same as a decision
+problem for some input.</p>
+<p>Thinking about decision problems, the halting problem is telling us
+if we can actually solve them.</p>
+<h2 id="research">Research</h2>
+<ul>
+<li>Work on results section putting in figures.</li>
+<li>Work on methodology then.</li>
+</ul>
+<p>Is one of the reasons I’m not doing a Gaussian or UI estimate because
+its questionable how useful those numbers are in a vacuum? I think for
+comparison they make a bit more sense, but even still its hard to know
+how such numbers contribute extra information.</p>
+<p>It might just be a matter of changing what an uncertainty analysis
+consisted of. As well as mentioning this in the representation part.</p>
+<p>The approach then is more creating a tool for analysis under
+generalisation for notation in a few select papers. We then demonstrate
+the tool.</p>
+<p>How does standard error relate to things?</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>16/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">16/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Wed 16 Aug 2023
+05:49:57 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="log">Log</h2>
+<p>RF Foster’s highlights in Chapter 14 of his book that while
+post-famine Ireland had demographi decline, large-scale emigration and
+altered farming conditions all thes trends can be traced to a
+‘watershed’ year in economic history for Ireland, the ending of the
+Napoleonic wars in 1815.</p>
+<p>This resulted in less tilling as demand for crops in Europe was
+reduced. Tilling seems to have been the more ecomical and easier method
+of agriculture. Pastoral farming now became the economical best choice.
+Despite the figures not really showing this reduction in tillage before
+the famine, it was something Ireland was going to have to deal with.</p>
+<p>I have a question about the dislocation between the landlord and
+farming class after the famine? Why was there a division there?</p>
+<p>I need to be careful too about confirmation bias. Part of me wants to
+go against the regular narrative for Ireland which is also not good. It
+seems that the British government demanded rates to be paid for relief.
+Landlords with poorer tenants could not afford these rates as the
+tenants could not pay rent.</p>
+<p>There’s an intense sense the irish are a land of aimless paupers. One
+landlord who owned close to 240km2 saying that he would not “breed
+paupers to pay priests” as some justification for his evictions.</p>
+<p>Yesterday, I was thinking a bit about justification and the placebo
+effect. I read before that you can have justified belief that is not
+necessarily true. This reminded me of the placebo affect but its not
+always related to getting better. It pops up in this template where you
+do something, that you believe is good for you, then when evidence to
+counter that is present the feelings attached to what you were doing are
+maintained while the feelings for the evidence aren’t so strong. It’s an
+irrationality but thats never stopped us before.</p>
+<h2 id="research">Research</h2>
+<p>Getting some interesting results now that I’m trying to produce them.
+Should have done this earlier!</p>
+<ul>
+<li>Can demostrate non-lineraity in some stages.</li>
+<li>Can demonstrate possible covariances in one stage.</li>
+<li>Should be noted that the inputs are somewhat arbitrarily
+chosen.</li>
+</ul>
+<p>The general thesis is that a tool is developed that can cope with
+abstraction of a formal nature in the literature so that common
+techniques can be applied.</p>
+<p>Need to try and tighten up the results and discussion, what are the
+main points?</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>17/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">17/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Thu 17 Aug 2023
+06:42:50 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h1 id="log">Log</h1>
+<p>I’m thinking I’ve more of an insight now into the impact of the
+halting problem in regards to how we evaluate modelling natural systems.
+I’m not too sure if this helps with any computation stuff I was stuck on
+before.</p>
+<h1 id="research">Research</h1>
+<p>Working on introduction section this morning, trying to clean it up
+as its a mess.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>18/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">18/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Fri 18 Aug 2023
+06:20:00 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="research">Research</h2>
+<p>I need to really simplify my points, I’m trying to do too much.</p>
+<p>Definitely a bit fucking lost at this stage. It all just seems very
+incoherent, I don’t know what they want me to say.</p>
+<p>Losing sight of the structure I think.</p>
+<p>I don’t think I’m very good at spending time on the foundation
+sometimes. Just generally.</p>
+<p>I’m trying to communicate this idea that any unit process or
+collection of unit process can be treated as a function. The aim of an
+uncertainty analysis is to provided a probabiliyt distribution for the
+output of a function.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>20/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">20/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Sun 20 Aug 2023
+06:15:10 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="summary-of-week">Summary of Week</h2>
+<p>This week has just been focused on writing my dissertation, with some
+irish history.</p>
+<p>I feel I’ve a better understanding of the halting problem and how it
+affects our understanding of the world now. An algorithm is a state
+space and a function between states. If we look at any phenomenon in the
+universe that we want to describe we try to symbolically represent
+different objects etc. this becomes a description of state. The function
+that is fully defined for all states is undecidable. That is, creation
+of a process to go from state to state in our representation of the real
+world is undecidable. We can do it, but the question of knowing if we
+can do it is unknowable.</p>
+<p>Huberman has a nice podcast with Lex. He’s a really intelligent guy
+obviously. I found his thoughts on non-overt displays of conflict
+interesting. The idea that we keep an internal scorecard that we don’t
+communicate. If I do something for someone, or i feel they’ve wronged me
+my actions in the future are controlled by a balance sheet that I feel I
+should be allowed to this or that as part of some contract
+implicitly.</p>
+<h2 id="research">Research</h2>
+<p>Need to start finishing up results and discussion and determining the
+structure of this section.</p>
+<p>So I’m going to talk about input correlations and then choosing input
+distributions so discussing papers that summarise what distribution are
+commonly chosen and why and then exploring ideas of elicitation. Then,
+something on representation of uncertainties I think.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>21/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">21/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Mon 21 Aug 2023
+05:57:52 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="log">Log</h2>
+<p>All I’ve been focused on doing is my dissertation. I guess I just
+have such high hopes for it and its most likely not going to be as good
+as I think it should be.</p>
+<p>I don’t know why it bothers me. I guess feeling sorry for myself
+these days. I’m not too sure about the job, I’ve no money and I know
+that my dissertation is fairly crap despite the amount of time I’ve put
+into it.</p>
+<p>There’s nothing really I can do about these things.</p>
+<p>I’ve been listening to the ‘ascent of money’ by Niall Ferguson. He
+establishes the foundation of money on trust. I’m hoping to understand
+better how credit has been crucial to economic development and have a
+more nuisance/educated view of finance.</p>
+<p>I’m still conscious of doing some Irish history reading I just having
+been great at keeping up the past few days.</p>
+<h2 id="research">Research</h2>
+<p>When I think about my disseration what are the main points I’m trying
+to get across? Think this question is important to figure out.</p>
+<ul>
+<li>The TCD LCI can be generalised with equations.</li>
+<li>This generalisation is useful for translating equations in the
+literature to code. Is this it?</li>
+</ul>
+<p>I’ve stated that the power of the Python model is its Turing
+completeness, how would I explain this? This means that it can simulate
+any Turing machine which is a formalism of an algorithm. Beyond just the
+simpler calculation of the TCD LCI … We can write Excel with Python but
+not the other way round.</p>
+<p>Generalisation of the concepts in an LCA allows us to attach
+metadata, like assumptions to things.</p>
+<p>The use of Python isn’t completely necessary, but I feel like I
+should still have better reasoning for using it.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>22/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">22/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Tue 22 Aug 2023
+06:29:42 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2 id="research">Research</h2>
+<p>Continuing from yesterday question on the main points I’m trying to
+get across.</p>
+<ul>
+<li>There is knowledge abstraction. If all experts in a domain can
+simplify their knowledge to equations and probability distributions an
+uncertainty analysis can easily be integrated into the model
+development.</li>
+</ul>
+<p>I might need to spend some time detailing why its needed.</p>
+<p>When I’m lost, try just come back to giving outlines of each
+section.</p>
+<p>I think there’s merit in the point that generalisation to functions
+allows for easier integration of uncertainty into model development. If
+you’re an LCA practioner you just need to define a function for you unit
+process</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>23/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">23/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Wed 23 Aug 2023
+06:58:40 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>Reading some Irish history this morning. I need to look at
+explaining things though to really understand them.</p>
+<p>O’Grada’s opening chapter deals with marriage rates and trying to
+infer Irelands population growth in the shadow of some Malthusian
+apocalypse where population keeps growing despite lowering standards of
+living. The Malthusian model had two relations. The return on labour is
+function of the land/labour ration. Increases in population are a
+function of income, the higher the income, the earlier the marriage,
+more children. It seems that a viewpoint taken on Ireland was that
+marriage was a ‘welcome relief’ from poverty so that young marriages
+persisted despite declining income. O’Grada points to evidence that
+seems to combat this literary sources are often counter to statistical
+evidence.</p>
+<p>Poverty was somewhat mitigated by the prevalence of turf and the
+potato. Such that people maintained decent health and warmth despite
+tattered clothing. There was a lot of rural poverty though.</p>
+<p>Theres an interesting tension in my engagement with Irish history. A
+foundation to the Irish people is the arts. But so much of the emotion
+conveyed in Irish song is one of nationalism. I found this nice song,
+based on a poem. Maybe engaging with the poetry can help.</p>
+<blockquote>
+<p>I will find Solace A short while only Among relatives On a sea island
+Walking the stone beach Morning and evening When I am not praying In the
+west I will find Solace A short while only Among relatives Without
+sorrow Without mind worry Without loneliness Without confusion In the
+west</p>
+</blockquote>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>24/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">24/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Thu 24 Aug 2023
+11:25:22 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I’ve been reading a bit of Stefan Eich’s book on money. It’s
+often considered a dramatic statement to consider money an
+intersubjective belief. That its power is just what we give it. While
+this is true, Eich considers money an institution which a society aims
+to construct, much like the law. The legitimacy of this institution, to
+Eich, is the ability of those affected by it to author it. In this
+light, the intersubjectivity of ‘murder’ is compared with money. We
+don’t really consider such an institution in the same light.</p>
+<p>Eich notes that there’s an orthodox theory of commodity money. The
+utility version of it. That it emerges out of convenience. And then the
+heterodox form which is credit money. Trust based not dependent on
+physicality. More of an abstract institution.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>26/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">26/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Sat 26 Aug 2023
+14:18:21 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I’ve been reading ‘Nature of Money’ by Ingham. Pretty
+interesting.</p>
+<p>The way I’m now seeing money is this notion of abstract value from an
+issuer. Money is whatever is considered a settlement of the debt by the
+issuer. In a sense money originates from a collection, a body of
+government etc. This is my conceptual model. I use to hold the natural
+veil idea that it emerges out of the ‘real’ economy. I still think that
+can explain some things but it’s not a very useful explanatory model for
+todays world it seems. Also, it seems that spot trade and barter doesn’t
+really exist, examples of it can’t really be found.</p>
+<p>Debt often has negative connotations but in this light its similar to
+civic law in that we use it for the ‘good of the many’ for a more ‘well
+run’ efficient society. Maybe Graebers book would be good to read
+too.</p>
+<p>It seems there’s just two schools of thought. The monetarists, who
+take money as emergent from the real economy for efficiencies sake and
+the creditalists who see this notion outlined above that purchasing
+power is derived from the issuer and that money just measures ‘units of
+account’. I still haven’t been able to seperate this abstract notion of
+a unit of account and the physical money just quite yet in my head.</p>
+<p>The state theory of money says that money does not exist without the
+idea of the state. Money is not medium that emerges from exchange. It is
+a means of accounting for the settling debts. The most important of
+which is tax debt. The value of the debts is expressed in the money of
+account.</p>
+<p>There’s a lot of reference to the price level, can a price exist
+separate from money?</p>
+<p>All money as token credit</p>
+<p>I really don’t see much of a difference in the two sides of the
+debates. I’ve been reading his section on how Marx’s labour theory of
+value still manifested in a commodity view of money so then he just
+falls on one side of the debate.</p>
+<p><a href="youtube.com/watch?v=nD6hS8WV3ic">How to do your own
+research?</a></p>
+<ul>
+<li>Have a list of reasonable questions you want answers to before you
+start.</li>
+</ul>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>27/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">27/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Sun 27 Aug 2023
+11:50:37 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>What seems to have been done when some ‘state’ conquered a
+population, taxes were demanded and soldiers payed for food and products
+from conquered populations with the money that would be accepted for the
+taxes by the conquering state. This originated with Alexandrian
+conquests. It was a more manageable way to dominate a new area rather
+than to enslave the population in forced labour.</p>
+<p>I think viewing money as initially debt establishes its origins as
+coercian. You immediately put a community of people ‘under water’ by
+making them pay taxes and mandating your currency. In some sense, this
+leads to an efficient economy, but it’s almost this intuition of ‘known
+coercion’ that leads people to outrage when this system is manipulated
+to other interests than that of the wider society.</p>
+<p>After the fall of Rome, money was non-operational. The political and
+social systems to establish a unit account did not arrive again until
+Charlemagne and latin Christiendom imposed a money of account.
+p.110.</p>
+<p>I’m struggling to find a base of an explanatory theory here wrt to
+the commodity vs chartalist theories.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>29/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">29/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Tue 29 Aug 2023
+06:00:47 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>In reading the ‘Nature of Money’, I’m confused about the jump
+from the notion of a Wergeld to a system of accounting.</p>
+<blockquote>
+<p>All evidence points to the historical origins of money as a means of
+calculating obligations and debts in pre-market tribal and clan
+society.</p>
+</blockquote>
+<p>Why does taxation become so widespread when surplus in generated in
+early agricultural societies?</p>
+<p>I struggle to intuit the ‘de-linking’ between the money of account
+and the means of payment. The abstraction of the money of account is
+hard to visualise.</p>
+<p>Theres a tension too that at some point you’ve to accept that this is
+how societies seem to have evolved.</p>
+<p>I think a point in favour of the institutional origin of money is the
+idea of bills of exchange. It seems that these proliferated due to the
+multiplicity of sovereigns in Europe. Bills of exchange don’t
+necessarily imply the creation of credit by banks as we know today.</p>
+<h2 id="research">Research</h2>
+<p>Going to try and create a notebook to: * Demo performing analysis. *
+Demo adding a unit process. Include in the Read me a brief description
+of these and how to run and write tests.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>30/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">30/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Wed 30 Aug 2023
+06:22:32 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I think Ingham phrases it nicely with the key issue in the
+development of money being</p>
+<blockquote>
+<p>How are inter-subjective hierachies of value produced from subjective
+preferences</p>
+</blockquote>
+<p>Monetary nominalism refers to the idea that different kind of moneys
+must ‘answer’ to the ‘money of account’ which is the ultimate
+‘description’ of money. The commodity theory does not answer to this
+account proposing that each money is emergent from exchange.</p>
+<p>The two conditions for ‘moneyness’:</p>
+<ul>
+<li>Measure of abstract value (unit of account).</li>
+<li>Means of storing and transporting this abstract value.</li>
+</ul>
+<p>A preliminary is money as ‘circulating debt’.</p>
+<p>But ingham prefers to use the idea of a network of cred-rebit
+relationships mediated by issuers.</p>
+<p>Without money, this would be a realtionship of obligations of
+reciprocity in a community.</p>
+<ul>
+<li>Alice lends flour to Bob.</li>
+<li>Bob helps here with roofing.</li>
+</ul>
+<p>A commodity, that ‘represent’ this reciprocity, would function as a
+symbol of something you are ‘owed’.</p>
+<ul>
+<li>Alice gets a communal coin.</li>
+<li>This represents Alice’s ‘right’ to get a favour from someone in the
+community.</li>
+</ul>
+<p>As reciprocity increases, it might be necessary to standardize such
+transactions in terms of labour. It’s hard to intuit how the ‘creation’
+of debt by the state would be something they’d want to do. In early
+civilization.</p>
+<p>If you had a simple society, with some ruler, economic growth in the
+form of more crop production could be incentivised by ‘paying’ farmers
+in terms of promises from the chief of a token that can be redeemed for
+food, or some other resource.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>31/08/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">31/08/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Thu 31 Aug 2023
+09:45:06 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>Getting ready for the Aurora interview:</p>
+<p>How do I figure out what it would be like to work there? What are the
+expectations in working outside hours? Are their retrospectives to work
+on what could be done better? What might a typical day look like? What
+is Aurora’s vision as a company? What is Aurora’s overall mission
+statement? Are most people invested in Aurora’s overall mission? Company
+culture? Are employees supported (wrt. to profits, customers)? Are there
+opportunities to up skill and learn internally, about the energy sector
+or otherwise?</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>02/09/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">02/09/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Sat 02 Sep 2023
+07:23:49 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I think I’ve made some headway on my understanding of money</p>
+<ul>
+<li>Money is an social construct or institution.</li>
+<li>It can be thought of as a symbol of something society (that defined
+the value) owes you.</li>
+<li>Money is ‘circulating debt’. When you receive a commodity that
+represents money society owes you something that is defined by the
+‘value’ or unit of account.</li>
+<li>Currency exchange directly relates to the power between societies as
+obligations from on society are weaker/stronger in another.</li>
+</ul>
+<p>When we feel money is being ‘created’, devalued, its a reflection on
+all of us. Its a subtle acknowledgement that we all agreed to give it
+value but someone has decided to make that decision for us.</p>
+<p>I saw a method from a student to put your source on the left, a main
+argument in the middle and points to back it up on the right. Seemed
+like a solid structure.</p>
+<p>It’s fascinating to think that some of our social structures evolved
+to mitigate conflict. That just as you might say why does a bird look
+this way, its a product of random mutations in an environment. Can we
+say the same about the social systems we’ve evolved, at least something
+deep rooted like religiosity?</p>
+<p>One of my goals or structures to implement on myself is writing stuff
+up!</p>
+<p><a href="https://www.youtube.com/watch?v=hqdemLf4VEM">Samuel Bowles
+on Economics (Mindscape)</a></p>
+<ul>
+<li>In economics there’s a tendency to try and define interactions
+through defining the particles in the interactions (human beings) in
+society.</li>
+<li>Game theory applies this mathematics to the ‘particles’ of the
+economic. Their behaviour can be formalised.</li>
+<li>Metaphor in Economics is commonly, transportation, analogies with a
+physical system where some forces are doing the optimisation and
+transporting, value, services etc. from one end to the other.</li>
+<li>Bowles prefers the conversational metaphor of the economy, that we
+should be looking at linguistic not really physics for similarities in
+concepts.</li>
+<li>Metaphors from actual society rather than biology or physics is
+important.</li>
+<li>Classic economics seemingly is explained by constraint optimization.
+In the simple case of one man on an island and the resources available.
+So you have a vector of options and things to produce.</li>
+<li>~ 20 min: Supply and demand as a theory depends upon the notion of a
+‘complete contract’, you get redress if the contract isn’t met. Think of
+how this doesn’t work for labour. If you offer me a salary, you’re
+purchasing my time. My agreement to work is not enforcible. The contract
+could be terminated but theres no redress really for it ??</li>
+</ul>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>04/09/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">04/09/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Mon 04 Sep 2023
+13:03:41 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>Trying to learn about Star Formation.</p>
+<h2 id="star-formation">Star Formation</h2>
+<p>It’s hard to visualise but molecules in a giant molecular cloud have
+a gravitational interaction.</p>
+<p>Is a molecular cloud an unsolvable three body problem?</p>
+<p>There are so many particles that we treat it as a continuous
+substance. But surely theres a point at which the density is so low that
+its an n-body problem.</p>
+<p>In a star gravity is constantly pushing for greater and greater
+density. The outward pressure gradient is what keeps this relentless
+force at bay.</p>
+<p>Molecules, if they can’t lose their kinetic energy they release it as
+radiation (light). As you compress a gas, it heats up. When the kinetic
+energy of particles is no longer that high, the continued compression is
+released in the form of radiation.</p>
+<p>There are around <span class="math inline">10<sup>9</sup></span>
+particles <span class="math inline"><em>m</em><sup>3</sup></span> in an
+interstellar cloud. It’s about <span
+class="math inline">10<sup>14</sup></span> km in size. It’s ‘surface’
+temperature is about 10K. Compared to a cloud particle/protostar which
+has a particle density of <span
+class="math inline">10<sup>24</sup>/<em>m</em><sup>3</sup></span> and
+3000K</p>
+<p>When the core temperature gets to about 10000K central temperature
+its outward pressure starts to balance and approach hydrostatic
+equilibrium.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>05/09/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">05/09/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Tue 05 Sep 2023
+06:47:34 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <h2
+id="what-is-the-justification-for-attitudes-towards-armament-and-war">What
+is the justification for attitudes towards armament and war?</h2>
+<p>Competition is a product of the natural world. It is a phenomenon
+that all self-propagating organisms deal with. It is a zero sum game
+ultimately, on a finite world (although maybe not??).</p>
+<p>Direct conflict over resources can occur with a gain for one party
+and a loss for the other. Resources could be shared, or used more
+efficiently but the more common strategy seems to be conflict or
+fighting.</p>
+<p>Gat would say that this is due to the success that conflict has
+(maybe only in the short term though). It seems that agriculture or
+settling might allow the other strategies to propagate. This is
+‘gene-culture’ interaction that Gat refers to.</p>
+<p>You can see the senseless arms race, tit for tat. Or you can see the
+constant need for suspicion based on basic evolutionary logic.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>09/06/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">09/06/23</span>
+        <ul class="nav pull-right doc-info">
+                            </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I think I need a way to represent the oil throughout the
+processes, this is the mass that never changes just gets rearranged, it
+would be handy if all processes had access to it. <strong>For any
+process we want to know its energy and the composition of the production
+(where all the masses are, because its a mass balance), the mass
+flow.</strong></p>
+<p>I’m finding it hard to visualise how the initial UCO just gets
+morphed into byproducts.</p>
+<p>I don’t think I understand the process enough yet to start
+‘designing’ a model for it.</p>
+<p>Jet fuel lies between the diesel and gasoline range, so a well chosen
+catalyst is needed to not break things down to much (cracking) and
+produce lots of gasoline while also breaking it down enough to not be
+left with a load of diesel.</p>
+<p>No more than 50% HEFA fuel is allowed in regular jet fuel mix to meet
+the aromatic content requirements.</p>
+<p>Why do we only care about tri-olein, linolein and palmitin? What
+about the di’s?</p>
+<p>My thinking is to represent the mass as a recursive data structure
+that mutates throughout the process, or at least, any process reads a
+recursive mass data structure as input.</p>
+<p>I think I may be over complicating things with this whole recursive
+mass flow notion. For now, could just have the inputs ‘build up’ the
+mass flow at that time. It might be a matter then of testing it out and
+seeing what kind of</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>07/09/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">07/09/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Thu 07 Sep 2023
+15:44:55 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I’ve been rereading some of Smil’s work. Its more
+understandable now. Smil’s work is far too anti-narrative driven. Which
+is ultimately very honest but probably why his work isn’t more popular.
+He argues for energy as a core model for humanities development. It’s
+logical, but not always.</p>
+<p>I’m trying to think of ways of forcing myself to write, or have
+accountability on book notes etc. I think making it manageable is very
+important but also somewhat focused so that its not so vague thats its
+impossible to know where to start. Maybe just an index of questions.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>08/09/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">08/09/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Fri 08 Sep 2023
+17:08:17 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>What do I need in a website to make me read more books and hit
+my learning goals?</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>09/09/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">09/09/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Sat 09 Sep 2023
+07:18:43 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>Blindsight has affected me quite a bit. It’s hard to get the
+idea of consciousness as a inefficiency out of one’s head. The more
+general notion of how dependent we are on our biological underpinnings
+to give us a map of reality is quite scary. We don’t really know reality
+most of the time. Viewing the universe in the rest of the EM spectrum or
+is some other tiny sliver is just as ‘real’ as the sliver we use.</p>
+<p>One of the strong motivators for learning things is to get ones head
+out of the sand. To ask yourself to do more, to care more. To overcome
+this genetic disposition to not care. It’s similar to the Stoic notion
+that what separates us from animals is our rational mind.</p>
+<p>Kind of like Noam Chomsky in how learned he was. But also taking
+inspiration from Buterin in being an explicit optimist. For instance,
+the street planning ideas for Dublin housing. More exact ideas to be
+experimented with and backing their development.</p>
+<p>Resist categorical thinking. Using new information and fitting it to
+your boundaries or stories.
+https://www.youtube.com/watch?v=NNnIGh9g6fA&amp;list=PL848F2368C90DDC3D</p>
+<h2 id="classical-mechanics">Classical Mechanics</h2>
+<p>The study of how things <em>move</em>. There are 3 equivalent
+formalisms.</p>
+<h2 id="complexity-economics">Complexity Economics</h2>
+<p>I’ve been reading the first chapter of Complexity by Waldrop. It’s
+anchored around the notion that those that have much, get more. The
+economist Brian Arthur studied increasing returns. For example, in high
+technology, like microcips or airplanes there is a huge up front cost so
+that marginally costs become very small. So once theres a standard in
+the industry marginal benefit comes from taking advantage of this
+standard.</p>
+<p>This is referred to as ‘increasing returns’ and according to Arthur,
+the Japanese development is a result of them taking advantage of
+this.</p>
+<p>It’s all (apparently) following a thought from Arthur that a science
+like biology, not physics should be used in analysing the economy, at
+times. That there is self-organization in the economy, non-optimal
+feedback loops.</p>
+<p>He seems to have developed at theory that small chance events can
+lock you in to a set of outcomes and that these outcomes may not always
+be optimal. Say if there are two options for cars and you’re trying to
+choose between the two. If you speak with owners of each car (say, there
+are more for the second) and they all give good reviews, you’ll choose
+the second. You need to be aware though that this positive feedback loop
+(as you will now become an owner of the second car) will affect the next
+decision maker. Essentially path dependence.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>19/09/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">19/09/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Tue 19 Sep 2023
+14:24:52 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I haven’t written a log in quite some time. I’ve been
+struggling to get rid of stress and anxiety throughout the day. I’m
+anxious about getting a place in Oxford. It just seems it’ll never
+happen.</p>
+<p>Money causes me anxiety too. Obviously because I don’t really have
+any but also on some visceral, irrational level. Reading ‘the
+dispossessed’ where money is an unknown concept has me thinking of why
+we do things anyways. Fundamentally, maybe we like having a ‘master’ (in
+this case money) to guide or decisions, to ease our anxiety. I feel I
+can relate to this viewpoint. I feel the most content when there is no
+ambiguity in my dad.</p>
+<p>I’ve been trying to do the PGM’s coursera course as well. I feel
+capable to do it but its been hard to focus.</p>
+<p>Are priests, judges, institutions telling us what to do external
+manifestations of our own consciousness? In our secularized world. What
+was once externally enforced upon us is now internally forced upon us.
+At least when its externalized we can rebel against it.</p>
+<blockquote>
+<p>Life is a fight, and the strongest wins. All civilization does is
+hide the blood and cover up the hate with pretty words!</p>
+</blockquote>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>20/09/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">20/09/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Wed 20 Sep 2023
+08:27:30 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>How embedded is this notion of property in our thinking? I
+equate it with the notion of the self and what one ‘deserves’. That some
+are born feeling justified to have things. It’s also a nature vs nurture
+debate though. Can someone be shaped to not feel this need. To feel the
+need of the community more. Is that stable? It seems thats a big
+question in the Dispossessed. Is such an altruistic society stable.</p>
+<p>There’s a motif of a wall throughout the book. A wall that people,
+ourselves and institutions put up. It blocks change and progress in
+getting to truly know someone, in truly understanding ourselves maybe
+and in expressing ideas (in the case of the institution).</p>
+<p>What would one do if we couldn’t own what we did? Is similar to the
+question of what would you do without pay but seems more fundamental. In
+the book Shevek can not take credit for his ideas if he is to release
+them. All that matters is the book, its contents. Not who wrote it.
+There’s a deserving tone to credit here too. Why should it matter, why
+do we care?</p>
+<p>I should really start seeing myself as a computer scientist. Or, more
+generally, applying a computational way of thinking to problems.</p>
+<p>This is an excellent talk https://www.youtube.com/watch?v=8qzVV7eEiaI
+and I think its changed my view on a computer scientist in Science.
+There is a replication crisis in Science that will surely be a problem.
+My issue is finding problems and practicing ‘data carpentry’. Or maybe
+my role could be to contribute to the ease of data carpentry for actual
+scientists?</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>
+<!doctype html>
+<html >
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!--[if lt IE 9]>
+                <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+        <![endif]-->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="template.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/template.css" />
+
+    <link href="https://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet" />
+
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <!-- <script type='text/javascript' src='menu/js/jquery.cookie.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.hoverIntent.minified.js'></script> -->
+    <!-- <script type='text/javascript' src='menu/js/jquery.dcjqaccordion.2.7.min.js'></script> -->
+
+    <!-- <link href="menu/css/skins/blue.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/graphite.css" rel="stylesheet" type="text/css" /> -->
+    <!-- <link href="menu/css/skins/grey.css" rel="stylesheet" type="text/css" /> -->
+  
+    <!-- <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script> -->
+        
+  
+    <!-- <script src="script.js"></script> -->
+  
+    <!-- <script src="jquery.sticky-kit.js "></script> -->
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.cookie.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.hoverIntent.minified.js'></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/js/jquery.dcjqaccordion.2.7.min.js'></script>
+
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/blue.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/graphite.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/menu/css/skins/grey.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/gh/ryangrose/easy-pandoc-templates@948e28e5/css/elegant_bootstrap.css" rel="stylesheet" type="text/css" />
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/script.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/gh/diversen/pandoc-bootstrap-adaptive-template@959c3622/jquery.sticky-kit.js"></script>
+    <meta name="generator" content="pandoc" />
+  <title>21/09/23</title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+
+    
+    <div class="navbar navbar-static-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <span class="doc-title">21/09/23</span>
+        <ul class="nav pull-right doc-info">
+                              <li><p class="navbar-text">Thu 21 Sep 2023
+13:36:24 IST</p></li>
+                  </ul>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+    <div class="row">
+            <div class="span12">
+
+      
+      <p>I’ve been struggling a small bit seeing the path forward in
+what I want to learn. PGM’s have been hard. I guess I’m just trying not
+to give up. I think what I’m really looking for is something I care
+about to model or code. A problem to solve.</p>
+<p>Should I just try and work through statistical rethinking? I lacks
+the evidence that I’ve done it (certificate). I think I need to take a
+practical lens. I need to learn about modelling dynamical systems
+(calculus etc.) there may not be some pedagogy for this. In the hopes of
+modelling what though? I think this is covered by classical mechanics
+study.</p>
+            </div>
+    </div>
+  </div>
+  <script src="https://vjs.zencdn.net/5.4.4/video.js"></script>
+
+</body>
+</html>

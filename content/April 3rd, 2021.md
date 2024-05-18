@@ -1,0 +1,5 @@
+- Finding it tough to focus again here today. Might read some dream machine
+    - I would kind of like to understand some of my questions first 
+- Theorems
+    - A theory embraces the assumptions themselves and the mathematical working out of the logical consequences which must necessarily follow from the assumptions. 
+    - heh, I think Pierce uses the same arguments as Feynman for introducing theories that define the real world

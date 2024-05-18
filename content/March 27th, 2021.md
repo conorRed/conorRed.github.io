@@ -1,0 +1,15 @@
+- Watch Ben Eater videos to get an understanding of how to turn numbers into instructions
+- Have another go at theorems in that book. Try and analyse assumptions
+    - Got a small bit closer for the first one, with the Hexagons
+- Try map out a skeleton for structure of thought
+    - Mapping of electronic signals into instructions. Then the mapping of instructions into programs or procedures. 
+    - Then we have what structure these instructions and procedures take on. Are they inherently bound by [[Logic]].
+    - If this is the case how does the halting problem apply (in some specific cases)
+    - Would be interesting to look at a case study. From x to Kubernetes or something. 
+    - Kind of takes on analysis from a systems perspective
+    - What are the first principles
+        - The end goal is control of the system (like [[Nobert Wiener]]). Make in do what we want it to do, For Kubernetes this means, creating objects and having scheduling etc.
+        - The beginning to this control is some form of communication. Some way to relate our ideas to the machine.
+        - What is the machine, what is the medium by which we communicate with it. It is the embodiment of procedures. In this sense it relates to reasoning. 
+- I struggle with the, what if this, or that when given definitive statements. I never really explore the characteristics of the what if's as this leads to more what if's (or at least I think it does). Its difficult, but interesting.
+- Understand the transitions as explained in dream machine

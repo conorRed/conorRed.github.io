@@ -1,0 +1,48 @@
+- #Author Norman Davies
+- 
+- ![Europe Physical Map](https://www.freeworldmaps.net/europe/europe.jpg)
+- ![European Rivers - Rivers of Europe, Map of Rivers in Europe, Major Rivers  in Europe - Worldatlas.com](https://www.worldatlas.com/r/w768/webimage/countrys/euriv.gif)
+- Just getting to grips with the landscape (literally) at the moment
+- Ancient Greece
+    - Davies starts the chapter with the unique climate of those islands around the Aegean and its unique climate as being a rare occurence in the world. I cant help but think that this is kind of hindsight though.
+    - The pre historic age begins with the Minoan and Mycenaean civilizations up to about the 1200BC in which the regions around the Aegean entered the dark ages.
+    - The golden age of the Greek city states was from about 8th century to the 4th century BC. Beginning with the Olympiad and ending with the conquering by the Macedonians
+    - Theres an interesting point about the victory of Hellas over the Persians in the Persian Wars giving a sense of identity to the Greeks. The East became the seat of brutality and ignorance. This could be a start of the idea of Greece full of Liberty, Persian all tyranny that defines Europe as the West and the East as tyranny.
+        - Interesting Block p.103
+            - "__The 'superiority complex' of the ancient Greeks inevitably raises questions about similar ethnocentric and xenophobic ideas which surface in Europe at later dates. It was certainly adopted by the Romans, and must be held in the reckoning when one considers the various purveyors of 'Western Civilization' who, like the Romans, have felt such an affinity for ancient Greece__"
+    - The cirty states around the Aegean seemed to lack the resources to support a growing population with not much arable land. Commercial outlets started popping up and bigger city states started creating clones of themselves through colonisation around Sicily and Souther Italy (to connect with Africa and Levant?)
+    - Sicily and Southern Italy (Magna Graecia or 'Greater Greece')
+    - Greek religion progressed from early animism and fetishism [[?]]. Lots of cults formed to different gods with different rites.
+    - Greek philosophy grew up in opposition to this. Different schools of moral thought. Cynics, Stoics etc.
+    - Greek drama evolved out of ceremonies of religious festivals. "The first Athenian dramas were performed at the festival of dionysus". Davies says that this time inspired the humanist tradition. It was the beginning of argument and rhetoric being studied. As the dramas were treated (or the festival dialogues) as competition. 
+    - This burst of art and science and literature seems to have been re hashed throughout the centuries and is why it plays a major part in European culture.
+    - Greek city states tried out many different forms of government
+    - With complicated political structures
+    - The city of Syracuse and Archimedes involvement in the Punic wars marks the end of the flourishing of thought 
+- Theres also an interesting Block here that talks about agricultural damage being noticed as early as the 6th century BC. The 'first transistion' the adoption of agriculuture. Europe being kind of late to the party but "The Judaeo-Chirstian tradition, which was destined to triumph in Europe, derived from the era of the 'First Transition'. It stressed Man's supremacy over the rest of Creation."
+- Need to make these shorter.
+- Rome
+    - Rome starts kicking off around 750BC and there origin story involves the taking of women from a nearby city.
+    - The Roman empire was absolutely massive. Davies talks about the 3 stages. The Kingdom, The republic and the Empire
+    - On thing I note is the idea of glorification of oppressive states. We admire ancient Rome because of its ability to maintain such a vast amount of people which and in some cases because of methods that were a result of oppression. One thing that comes to mind is the games and gladiatorial fights. Admiring the Coliseum ignoring what it was used for.
+    - The republic begins with the consuls and its the movement from a province, to conquering the mediterranean. I like the info about the dating that they used which became by consulship. 
+    - I noted also about researching more on the Punic Wars as it really seems to have signified a lot of the character of the people of Rome
+    - Of course there was lots of civil strife. Theres a weird hierarchy too. You could be an un-free citizen . Davies notes that class conflict was few and far between. The blood line kinship and father hood ruled strong and were the cornerstone of family law.
+        - The plebians met in there own forum and so did the patricians and then sometimes they would meet with eachother. Party politics starts here too as the patrons expected followers to support his policies. 
+    - I noted here the interesting info about the Roman naming. Mainly used as a way to denote social status about anything else (individual sense). Which is interesting to think about in terms of how we view names today.
+    - Consuls were proposed by the senate and kept the peace between the senate and the people as well as judicial and foreign affairs control
+    - Its also interesting to note here that Romes goals on conquering places was to provide security and support to the local leader. Some of these things are hard really to sum up in notes
+    - Augustus brought in a new age collecting all the offices that controlled the republic.
+    - Provinces generated great wealth for Rome but soon started to over load Rome
+    - Leading into Christianity and the influence of St Paul in propagating Christianity throughout Rome. There was also disputes about ultimate authority on theological issues and where it was to be settled (Rome?)
+    - There were still a lot of competing cults of random gods for the first few hundred years of Christianity.
+- Im interested in how Geography defines lots of history.
+- Birth of Europe
+    - After this chapter I get even more confused. The migrations and trying to keep track of where different tribes are coming from
+    - Davies says that a lot of factors influenced migrations and that the migrations in the far east could like falling dominoes affect the west
+    - In the first half of the first millennium the west was mainly latinised while the east was hellenic the peninsula was dominated by the indo-european languages
+    - Proto Indo-European can be traced back the Eurasia 5000BC
+    - Celts pushed north west by Germanic peoples
+    - Germanic peoples probably formed the largest barbarian population of the Roman period. First identified in southern Scandinavia.
+        - Germanic group divided into three groupings. The Scandinavians, the west germanic around the north sea coast (batavians, Franks , agles, saxons), Eastern germanics, east of the Elbe (Lombards, Alans and Goths). Principal actors in the crisis of the western Empire
+    - Origins of the slavs? oh boy so much I don't know. I need to do some more research

@@ -1,0 +1,13 @@
+- [[knowledge]] structures
+    - [https://www.quantamagazine.org/with-constructor-theory-chiara-marletto-invokes-the-impossible-20210429/](constructor theory)
+        - Counterfactuals as the heart of physics. Saying what can not be the case. 
+        - e.g. a perpetual motion machine can not exist
+        - __Constructor theory puts counterfactuals at the very foundation of physics, so that the most fundamental laws can be formulated in these terms.__
+        - 
+- [V sauce future of reasoning](https://www.youtube.com/watch?v=_ArVh3Cj9rw)
+    - Interesting video about where our faculties of reason go
+    - reasoning evolved for sociability?
+        - to justify ourselves and ideas to others
+    - will have to rewatch
+- webpack
+- I still dont understand how [[maxwells demon]] is that earth shattering, i mean it cant exist logically.

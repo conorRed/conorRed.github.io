@@ -1,0 +1,19 @@
+- {{[[TODO]]}} [Matt Ridley talk ](https://www.youtube.com/watch?v=qMxe73iJPbo)
+- {{[[DONE]]}} Get Lir back up and running 
+    - Still working on player form
+    - Possibly need an admin section after this
+    - Taking a break til tomorrow
+- {{[[DONE]]}} Read 2hrs HWP
+- {{[[TODO]]}}  Brief history of router architecture
+- {{[[DONE]]}} Lidl
+- {{[[TODO]]}} Look over articles from PC interview review questions
+- Check out Wolfram blog post
+    - Information theory, specifically the evolution of binary into symbols [[?]]
+    - Polynomials, shift registers
+    - shift registers important to keep "chattering" on the line.
+    - How do polynomials describe the behaviour, or the __recurrence relation__
+    - "The idea is to have all phones essentially operate on the same frequency, but to have each phone encode its signal using (in the simplest case) a differently shifted version of a shift register sequence. And because of Sol’s mathematical results, these differently shifted versions have no correlation—so the cellphone signals don’t interfere. And this is how, for example, most [3G](https://en.wikipedia.org/wiki/3G) cellphone networks operate"
+    - 
+- Look hard at investing again. In terms of what are impactful ways I can use the money I have, to progress innovation?
+- Reading McWilliams article in the times about the rentier economy who make income through extraction. He references a paper [this](https://www.irishtimes.com/opinion/david-mcwilliams-ireland-has-too-many-stockbrokers-and-lawyers-not-enough-engineers-1.4508538)
+- Could be interesting to think, does bitcoin require a belief or converting to deliver. Do truly game changing innovative technologies deliver straight away?

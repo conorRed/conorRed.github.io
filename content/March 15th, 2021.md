@@ -1,0 +1,37 @@
+- Maybe I should plan a marathon to try and get some sort of understanding of __"What is Information?__
+- [Security .txt](https://github.com/securitytxt/security-txt)
+- [Part-time manifesto](https://www.swyx.io/part-time-creator-manifesto/)
+    - For Part-Time Creators, the ultimate source of synergy with the day job is __expertise__. Expertise is specific and tacit knowledge. Everything that cannot be taught: all the judgment you hone by doing, all the untold stories and relevant data recalled at your fingertips. Your work history will also give you credibility, although you must not over-represent what you can speak to.
+        - If you can deliver your expertise concisely, you are now a viable **consultant**.
+        - If you can package it into a repeatable process, you have a **productized service**.
+        - If you can create something valuable disconnected from your time, you now have a **product**.
+        - Talks about a creator middle class too, which I guess is kinda interesting
+            - {{[[TODO]]}} https://li.substack.com/p/building-the-middle-class-of-the
+- check out Blinkist
+- Might try and get through some blog posts today
+- will see if I pull something off the backlog, or if the spike is done
+    - UI related. Trying to figure out spring boot error handling or if we even need errors
+- {{[[TODO]]}} analog computer
+- Logic to symbols [[?]]
+- Bayes theorem bayes thinking
+- {{[[TODO]]}}  reading list for China
+- Start listening to MIT energy initiative again
+- FORM 10 finding interesting insights in the risks section, John Collison
+- #Book __The Beginning of Infinity__ David Deutsch
+- #Book Reasons and Persons Derek Parfit
+- {{[[DONE]]}}  [How to invent the future](https://www.youtube.com/watch?v=id1WShzzMCQ)
+    - Learn everything but forget it all of it to develop ideas. 
+    - "If large companies were rational there'd never be startups"
+    - How do we get to things that are doable, but not with the technology currently laying around?
+    - People just working off these developed tech in xerox park.
+    - Making your own market. If you want to make money its the most lucrative.
+    - research communities.
+    - ARPA
+    - Really advance something very important. 
+    - Forget about goals
+    - Fund problem finding
+    - Doing workarounds of vendor stuff can kill research thinking. Building on what someone elses idea of computing is
+    - Getting funded for the right problems. Not so much actually finishing or solving the problem
+    - Make an intuition
+        - Identify a favourable exponent, and look at the intuition in 30 yrs. Could we live without it?
+    - Bring the future back 

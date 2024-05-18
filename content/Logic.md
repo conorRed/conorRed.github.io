@@ -1,0 +1,15 @@
+---
+tags: [philosophy]
+---
+- Conceptions of Logic
+    - On the one hand, logic is the study of certain mathematical properties of artificial, formal languages.
+    - A second discipline, also called ‘logic’, deals with certain valid inferences and good reasoning based on them.
+        - it deals with inferences whose validity can be traced back to the **formal features of the representations** that are involved in that inference, be they linguistic, mental, or other representations.
+        - To call an inference formally valid is to assume that certain words have their meaning fixed, that we are within a fixed set of representations, and that we can ignore the meaning of the other words.
+        - The fixed words are the logically vocabulary. And when an inference is formally valid then the conclusion logically follows from the premises.
+    - A third conception of logic takes logic to be the study of special truths, or facts: the logical truths, or facts.
+        - Constructing a body of logical truths
+        - Alternatively, a logical truth is one whose truth is guaranteed as long as the meaning of the logical constants is fixed, no matter what the meanings of the other parts in a representation are. A pure rule.
+- One important philosophical aspect of logic, at least in the senses that deal with logical consequence and the forms of judgements, is its normativity. Logic seems to give us a guide how we ought to reason, and how we ought to draw inferences from one representation to another. But it is not at all clear what guide it gives us, and how we should understand more precisely what norms logic puts on our reasoning.
+- And, of course, logic does not tell us how we ought to reason or infer in all particular cases. Logic does not deal with the particular cases, but only with the most generally valid forms of reasoning or inference, ones that are valid no matter what one reasons about.
+-

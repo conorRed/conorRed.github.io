@@ -1,0 +1,9 @@
+- #Finance #Banking
+- 
+- #eli5
+    - Why?
+    - How?
+    - 
+- https://www.investopedia.com/articles/07/banking.asp
+    - Merchant banks
+        - At that time, a bank was under no legal obligation to disclose its capital reserves, an indication of its ability to survive large, above-average loan losses. This mysterious practice meant that a bank's reputation and history mattered more than anything.

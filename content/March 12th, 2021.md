@@ -1,0 +1,10 @@
+-  Need to have a look at kubernetes the hard way
+    - Am I arsed creating actual infrastructure and paying money?
+    - Set up couple nodes as controllers (control plane)
+    - Set up couple nodes as workers
+    - Set up PKI between all these
+    - Could do it as an exploration with Wolfi?
+- Check out Wolfram blog post
+- {{[[DONE]]}}  Expense report for standing desk
+- [[Computer Networks: A Systems Approach]]
+- 

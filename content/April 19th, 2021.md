@@ -1,0 +1,9 @@
+- {{[[TODO]]}} [[April 20th, 2021]] Roam research features
+    - shift enter
+    - pull bullets
+    - 
+- #youtube https://www.youtube.com/watch?v=3fbsi3o0BbA
+    - Rise in bacteria and risk factors with different diseases due to climate change. Reduction in ability to get substance from fish based diets.
+- Inertia a body wants to remain in its current state (either in motion or at rest)
+- [[April 20th, 2021]] [[April 21st, 2021]] Yuval and Daniel Kahneman https://www.youtube.com/watch?v=7yhg7NmTeVg
+- 

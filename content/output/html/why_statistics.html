@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why Statistics</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Why Statistics</h1>
+    </header>
+    <div class="container">
+        <div id="sidebar">
+            <nav id="table-of-contents">
+                <ul>
+                    <ul>
+                    <li><a href="#blind-men-and-the-elephant">Blind men
+                    and the elephant</a></li>
+                    <li><a href="#what-is-statistics">What is
+                    Statistics?</a>
+                    <ul>
+                    <li><a
+                    href="#statistical-model-informally">Statistical
+                    Model (informally)</a></li>
+                    <li><a
+                    href="#statistical-model-formally">Statistical Model
+                    (formally)</a></li>
+                    </ul></li>
+                    <li><a href="#pinning-down-reality">Pinning down
+                    reality</a></li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+        <div id="content">
+            <article>
+                <p>What is the ‘case’ is a powerful idea. The ‘case’ is
+                physical reality, at some moment in time or space. It is
+                absolute reality, a platonic ideal we deduce from out
+                sensory experience.</p>
+                <h2 id="blind-men-and-the-elephant">Blind men and the
+                elephant</h2>
+                <p><img src="blind-elephant.png"
+                style="width:80.0%" /></p>
+                <p>My intuitive feeling for what is the ‘case’ is best
+                summarised by the parable of the blind men and the
+                elephant. Several blind men encounter an elephant for
+                the first time and attempt to understand what it is by
+                touching different parts of its body.</p>
+                <p>Each blind man touches a different part of the
+                elephant—the trunk, the tusks, the ears, the legs, and
+                the tail—and based on their limited experience, they
+                come to vastly different conclusions about what the
+                elephant is like. One might describe the elephant as
+                like a snake (feeling the trunk), another might say it’s
+                like a spear (feeling the tusks), while another might
+                say it’s like a fan (feeling the ears), and so on.</p>
+                <h2 id="what-is-statistics">What is Statistics?</h2>
+                <p>Statistics is applied philosophy of science.</p>
+                <blockquote>
+                <p>The application of our understanding of how to
+                establish patterns about reality and put a measure of
+                certainty on the existence of such a pattern in
+                nature.</p>
+                </blockquote>
+                <p>Data is the The raw material of statistics. Where
+                evidence is defined as “the available body of facts or
+                information indicating whether a belief or proposition
+                is true or valid.” data is:</p>
+                <blockquote>
+                <p>nature’s evidence, seen through the lens of a
+                measuring instrument.</p>
+                </blockquote>
+                <p>Data takes the form of numbers. Numbers lack
+                ambiguity. They have one property: their value.</p>
+                <p>Imagine you are one of the blind men from the parable
+                above. How would you describe what you feel to the other
+                blind men? You feel a smooth surface, how smooth? How
+                might another blind man compare the smoothness he feels
+                with what I feel without touching the same part?</p>
+                <p>What might emerge is a common unit of measure,
+                another object to compare it to and say: “Touch the wall
+                [or anything all me can touch] its about that smooth,
+                maybe a little more, maybe a little less”. What would
+                eventually happen is that smoothness and roughness would
+                take on numerical approximations to this common
+                measure.</p>
+                <h3 id="statistical-model-informally">Statistical Model
+                (informally)</h3>
+                <p>All science relies on a reduction, or simplification
+                of reality. This simplification is referred to as a
+                system. It could be two billiard balls, the atmosphere
+                of the planet or a neutron star. Its a portion of
+                reality under study.</p>
+                <p>If the system was the elephant. The data about the
+                system is in the form of sensory experience with the
+                blind men. All the blind man come up with what they
+                think the elephant is based on this data. Each blind man
+                comes up with a <em>model</em> of what they’re
+                touching.</p>
+                <p>Imagine that each man only measured one property,
+                roughness, and had a super accurate way to do so, such
+                that we translate each measure of roughness to a number
+                on some scale. If all the possible models each man could
+                come up with is just an animal defined purely by a
+                roughness measure, the task becomes to associate the
+                data measured by the men with a given animal/model. To
+                compare the roughness measured with what we know the
+                roughness of each model (animal) to be. We want to match
+                the collected information to the animal (model).</p>
+                <p>This matching process is uncertain. We can’t be 100%
+                sure that even if all the measurements by the men
+                matches the roughness of an elephant that its definitely
+                an elephant but statistics provides methods to quantify
+                how sure we are.</p>
+                <h3 id="statistical-model-formally">Statistical Model
+                (formally)</h3>
+                <p>A statistical model has to connect two distinct
+                conceptual entities: data, which are elements <span
+                class="math inline"><em>x</em></span> of some set (such
+                as a vector space), and a possible quantitative model of
+                the data behavior. Models are usually represented by
+                points <span class="math inline"><em>θ</em></span> <a
+                href="#fn1" class="footnote-ref" id="fnref1"
+                role="doc-noteref"><sup>1</sup></a>.</p>
+                <img src="pasted_img_20240503083907.png" />
+                <div class="caption">
+                A general form of a statistical model. You can read the
+                system here as an animal that has been hypothesised by
+                one of the blind men.
+                </div>
+                <p>If we classified each animal above as a vector of
+                points and the collection of these animals as a vector
+                of vectors <span class="math inline"><em>θ</em></span>.
+                We consider the data as a vector <span
+                class="math inline"><em>x⃗</em> = [<em>x</em><sub>1</sub>,...,<em>x</em><sub><em>n</em></sub>]</span>.
+                The goal is to define a function <span
+                class="math inline"><em>Λ</em>(<em>x</em>,<em>θ</em>)</span>
+                that assigns a numerical value, or measure, quantifying
+                the relationship between that data and a given model
+                point <span
+                class="math inline">(<em>θ</em><sub>1</sub>,...,<em>θ</em><sub><em>n</em></sub>)</span>
+                (which is the ‘system’ in the above diagram). This value
+                would be higher if the data more closely aligned with a
+                point in <span class="math inline"><em>θ</em></span> (an
+                animal) and lower if it doesn’t seem related.</p>
+                <h2 id="pinning-down-reality">Pinning down reality</h2>
+                <p>One of my biggest inspirations is Carl Sagan. I read
+                his work, the ‘Demon Haunted World’ in my teens. I
+                wanted to explore the supernatural, to become ‘excited’
+                about reality. Reality as defined by science was boring
+                and banal. Anyone whose read the book will see the irony
+                of this goal. Sagan dismantles lots of notions of the
+                supernatural in this book but maintains the validity of
+                claims of the supernatural without the scientific
+                method. The subtitle of the book: ‘Science as a candle
+                in the dark’ summarises Sagan’s views of Science as a
+                set of methods to keep us from fooling ourselves. Sagan
+                pushes for humility but rigour in how science should be
+                perceived in our culture.</p>
+                <p>In April of 2023 I started to self-study John
+                Tsitsiklis’ course on probability from MIT
+                Opencourseware <a href="#fn2" class="footnote-ref"
+                id="fnref2" role="doc-noteref"><sup>2</sup></a>.
+                Tsitsiklis’ approach was to provide rigour as well as
+                general practical application. What fascinated me was
+                that when intuitive explanations didn’t work I would
+                just try and learn the formulas, to get a sense of the
+                notation and symbols. This was the mathematical object
+                that described the phenomenon. No matter the ‘intuition’
+                you came up with to describe it, you could never truly
+                say more or less than the mathematical notation.</p>
+                <p>As is quite obvious, reducing an animal to a set of
+                numbers seems inhuman and wrong. This constraining of
+                reality is reductionism. Breaking something complex like
+                an animal down into what are its essential parts for
+                differentiating it in reality. This is primarily so we
+                can be unambiguous about what an elephant is, so that my
+                idea of an elephant is the same as yours. To truly
+                understand reality we have to remove our perception from
+                obfuscating it.</p>
+                <p>To make correct decisions, to strive for a better
+                world requires having the best model of reality possible
+                both for its own sake and for having accurate
+                information to make informed decisions. Beauty and
+                empathy for reality and its constituents (us) can be
+                maintained in this regime. Balancing both is essential
+                for tackling problems with multiple stakeholders, with
+                no right answer but whose answer must be some sort of
+                compromise.</p>
+                <section class="footnotes footnotes-end-of-document"
+                role="doc-endnotes">
+                <hr />
+                <ol>
+                <li id="fn1"
+                role="doc-endnote"><p>https://stats.stackexchange.com/questions/2641/what-is-the-difference-between-likelihood-and-probability<a
+                href="#fnref1" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                <li id="fn2"
+                role="doc-endnote"><p>https://ocw.mit.edu/courses/6-041-probabilistic-systems-analysis-and-applied-probability-fall-2010/<a
+                href="#fnref2" class="footnote-back"
+                role="doc-backlink">↩︎</a></p></li>
+                </ol>
+                </section>
+            </article>
+        </div>
+    </div>
+    <footer>
+    </footer>
+</body>
+</html>

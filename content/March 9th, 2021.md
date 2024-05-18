@@ -1,0 +1,22 @@
+-  First day on roam 
+    -  {{[[TODO]]}} Hamming “You and Your Research”
+        - {{[[DONE]]}} Last pass expiry
+        - Reason field update on artefact timeout spike
+        - Look on amazon for:
+            - Electric grinder
+            - Desk mat
+            - Books
+            - HDMI to usb
+            - Foldable shoe rack
+        - Fix artifactory polling error. Once again, what did I miss in testing? Bit of post mortem would do no harm
+        - How come one of the other controller manager pods couldn’t pick up the slack for the failed one. In terms of the native pipeline Jenkins job
+- I think I could have been more conscious of what I was testing, what I am mocking vs not mocking, what are the loop wholes or choke points
+- Taking for granted method in the code base, not asking why the context was now part of the exchange.
+- Computer applications as an abstract thing. As opposed to software and hardware. An application is creating a solution aka solving a problem. How we cater to solve this problem
+- In the Hamming sense the fundamentals, things that won’t really change is the idea of a computer application, using a computer to solve some problem.
+- Where that application lives could also be fairly constant in terms of delivering it to a wide number of people aka the internet.
+- How do these morph with business need. Particularly the delivery?
+- Note-taking system up to my own server. Syncing files
+- Patrick the goal of economics to be how to get the best benefit for the most people. As opposed to some esoteric thought.
+- Read an article about free public toilets and them being indicative	of the need for government to get out of the way.
+- A thought I’ve been trying to reconcile recently is raging against the machine in a technological sense. Feeling guilty if I don’t have complete control over things I do in a computing sense. This derives mainly from the talks and videos by Luke Smith who makes a lot of valid points. Upon getting roam today (inspired by P collision) I realised that in a sense betting against the future going well, against innovation and freedom. Hopping off the ship hoping it will sink in a sense. I think its better to be on the ship at least to have an input in creating the future. It seems slightly stubborn to be recalicitrant to the change.

@@ -1,0 +1,32 @@
+- [[physics]] [[calculus]] 07:08
+    - The function whose value at $$x$$ is the derivative of $$f$$ at $$x$$ can be written as
+$$\frac{df}{dx}(x)$$ or $$\frac{df(x)}{dx}$$ or $$\frac{d}{dx}f(x)$$
+    - [[differentials]] Let $$y = f(x)$$ be a differentiable function. The **differential dx** is an independent variable. The differential dy is $$dy = f'(x)dx$$
+        - [[linearization]] Every differentiable curve behaves locally like its tangent line
+        - point slope equation of a line (tangent line) is he line that passes through that point. Its slope is the derivative at the point.
+        - The change in the [[linearization]] of $$f$$ is precisely the value of the differential $$dy$$. Therefore, $$dy$$ represents the amount the tangent line rises or falls when $$x$$ changes by an amount $$dx = \Delta{x}$$
+        - If we have a change $$\Delta{x}$$ what is the corresponding change in $$\Delta{y}$$ would be $$f(x + \Delta{x}) - f(x)$$ just the same as $$x + \Delta{x} - x$$ in the y direction
+        - $$\Delta{y}$$ represents a change in slope with a change in x. Not the new slope, just the change in slope.
+        - the quotient of the differential $$dy$$ by the differential $$dx$$ is equal to the derivative $$f'(x)$$ because 
+$$dy \div dx = \frac{f'(x)dx}{dx} = f'(x) = \frac{dy}{dx}$$
+        - The differential form is dependent on an x and a dx.
+        - dy or dx vs $$\frac{dy}{dx}$$
+            - dy is the approximated change in the y-values by using the derivative or linearization. As dx is infinitely small it becomes exact.
+            - 
+- [article on metadata taking over AI](https://calpaterson.com/metadata.html)
+    - For instance, solving hard AI problems to drive through a McDonald's drive thru as opposed to McDonald's uploading that route as metadata. Or the speed limits on roads being read from a sign vs provided as metadata on the route
+    - __Google mythos that they have some godlike power to algorithmically understand web pages. It also misleads the public that metadata is somehow ancillary and that search engines will work all it out on their own__
+- [[April 20th, 2021]] [[April 21st, 2021]] Yuval and Daniel Kahneman https://www.youtube.com/watch?v=7yhg7NmTeVg
+    - Noise in judgement as opposed to bias. Algorithm's dont have noise or are not affected by noise.
+    - Harari says that emotional intelligence is pattern related too. Sees no reason why AI cant take over some of these areas. Computer doesn't necessarily have to feel emotion.
+        - Not clouded by emotions
+    - Can assume that systems could get so complex that no human would actually understand the system (e.g. financial system). Insight would be through machines.
+    - Meaning in life, superfluous people having political implications.
+    - The margin for error to try things out in the next century is huge we must hit the bullseye as the rate of change is high.
+    - Dont need to know people completely. Just need to know people better than themselves
+        - The sense that I dont understand myself completely. Maybe someone else knows me better than I know myself. Need to learn with humility, what we are.
+    - Got to 40 min
+- Axioms of physics are the conservation laws https://www.youtube.com/watch?v=rwCQ40HjhBE
+- [Raptor engine](https://www.youtube.com/watch?v=LbH1ZDImaI8)
+    - Pumps are used because a high enough pressure in tanks is not scalable. 
+    - So you propel the fuel out with the pump. Not too sure what goes on in the combustion chamber. How does the speed of fuel from the pumps affect the energy generated in the combustion chamber?

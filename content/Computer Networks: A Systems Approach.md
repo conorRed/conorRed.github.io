@@ -1,0 +1,15 @@
+- # Foundation
+    - Requirements
+        - "__ Instead, we will be asking (and answering) the question of why networks are designed the way they are. While it is tempting to settle for just understanding the way it’s done today, it is important to recognize the underlying concepts because networks are constantly changing as technology evolves and new applications are invented.__"
+        - Look at the scale of the connectivity needed. 
+        - "__In general, we use a cloud to denote any type of network, whether it is a single point-to-point link, a multiple-access link, or a switched network__" The implementation details of the network being hidden in the cloud e.g. point to point links to switches
+        - "__Note that an internet can itself be viewed as another kind of network, which means that an internet can be built from a set of internets. Thus, we can recursively build arbitrarily large networks by interconnecting clouds to form larger clouds. It can reasonably be argued that this idea of interconnecting widely differing networks was the fundamental innovation of the Internet and that the successful growth of the Internet to global size and billions of nodes **was the result of some very good design decisions** by the early Internet architects, which we will discuss later.__" [[?]]
+        - Once connectivity is established need a way to determine which node to talk to. "The process of determining systematically how to forward messages toward the destination node based on its address is called __routing__"
+        - How can we have hosts sharing a link? and how can we have hosts sharing a network?
+            - Multiplexing the data sent over the network. Timesharing in computers.
+                - Time division multiplexing
+                - Frequency division multiplexing
+                - Statistical multiplexing avoids idleness in above. We need an upper limit on the amount of data that can be sent so that others can also use the link. This limited size block is referred to as a __packet__
+    - Common services
+        - When two application programs need to communicate with each other, a lot of complicated things must happen beyond simply sending a message from one host to another. One option would be for application designers to build all that complicated functionality into each application program. However, since many applications need common services, it is much more logical to implement those common services once and then to let the application designer build the application using those services. The challenge for a network designer is to identify the right set of common services. The goal is to hide the complexity of the network from the application without overly constraining the application designer
+        - The challenge is to recognize what functionality the channels should provide to application programs.

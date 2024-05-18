@@ -1,0 +1,23 @@
+\babel@toc {american}{}
+\contentsline {section}{\numberline {1}Probability}{3}{section.1}% 
+\contentsline {section}{\numberline {2}Axioms}{3}{section.2}% 
+\contentsline {subsubsection}{Discrete Uniform Law}{3}{section*.2}% 
+\contentsline {subsection}{\numberline {2.1}Probability calculation steps:}{3}{subsection.2.1}% 
+\contentsline {section}{\numberline {3}Conditional Probability}{3}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Mulplication Rule}{4}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Total Probability Theorem}{4}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Bayes Rule}{5}{subsection.3.3}% 
+\contentsline {section}{\numberline {4}Independence}{5}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}What is the relationship between conditioning and independence?}{5}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Constructors}{5}{subsection.4.2}% 
+\contentsline {section}{\numberline {5}Counting}{5}{section.5}% 
+\contentsline {section}{\numberline {6}Random Variables}{5}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}PMF}{6}{subsection.6.1}% 
+\contentsline {subsubsection}{How to compute a PMF}{6}{section*.3}% 
+\contentsline {subsection}{\numberline {6.2}Binomial PMF}{6}{subsection.6.2}% 
+\contentsline {subsection}{\numberline {6.3}Expected Value of a Random Variable}{6}{subsection.6.3}% 
+\contentsline {subsubsection}{Expected Value Rule}{6}{section*.4}% 
+\contentsline {subsection}{\numberline {6.4}Variance}{8}{subsection.6.4}% 
+\contentsline {section}{\numberline {7}Tips}{8}{section.7}% 
+\contentsline {subsection}{\numberline {7.1}03/03/23 14:39:00}{8}{subsection.7.1}% 
+\contentsline {subsection}{\numberline {7.2}04/03/23 17:49:00}{8}{subsection.7.2}% 

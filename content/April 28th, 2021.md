@@ -1,0 +1,12 @@
+- [[physics]] [[calculus]] 07:58
+    - [[differentials]]
+        - The corresponding change in the tangent line is measure from the line through a when x = a
+        - $$\Delta{y}$$ is the change in the y value, $$dy$$ is the change in the tangent line slope
+        - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2Fconorred%2FAG5b7N-D2L.png?alt=media&token=8003c11c-75bc-4b45-9a37-190aa7fb708e)
+        - dy is the change in the line with slope dy/dx
+        - A __fraction__ is a part of a whole. Sometimes a ratio is not a __fraction__. 
+- #spelunking
+    - show scylla gitops PR auto merge
+    - show manifest and deploys against it.
+- [[thoughts 🤔]] #career
+    - why do I immediately jump to everything in my area as meaningless. Its obviously not. Maybe its just the specific work I'm doing

@@ -1,0 +1,14 @@
+- Key ideas from effective altruism. Heard interesting 
+- Change client to new interface
+- listening to an 80000 hours podcast with Tara MacAuley where she talked feedback between workers and decision makers being important. This is mainly wrapped up in culture and creating the right environment.
+    - Ops people as the lubricant or the progressors of an organisation
+- should check for WPC stage count?
+- Max Roser. Pessimism as depth
+    - Productivity = What you get out / Work you put in
+    - How do incomes grow? Productivity increases
+- Will the expected artefacts contain the pseudo artefact type, or the child artefact types?
+- Sam Altman: Moore's law for everything
+    - Prices of labour will drop substantially
+    - The AI revolution
+    - "AI will lower the cost of goods and services, because labor is the driving cost at many levels of the supply chain. If robots can build a house on land you already own from natural resources mined and refined onsite, using solar power, the cost of building that house is close to the cost to rent the robots. And if those robots are made by other robots, the cost to rent them will be much less than it was when humans made them."
+    - Proposes american wealth fund

@@ -1,0 +1,4 @@
+- [[Eschatology]] Eschatology is a part of theology concerned with the final events of history, or the ultimate destiny of humanity.
+- [[Monasticism]] Monasticism, or monkhood, is a religious way of life in which one renounces worldly pursuits to devote oneself fully to spiritual work.
+- [[Plutoctatic]] relating to our characterised by government by the wealthy.
+- [[Ontological]] relating to the branch of metaphysics dealing with the nature of being.

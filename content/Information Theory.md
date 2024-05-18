@@ -1,0 +1,38 @@
+- fundamental particle of all forms of communication
+- Information measure called entropy . A bit, a measure of surprise
+- The development of pictograms and ideagrams (like river and middle) 
+- Name having nothing to do with individual symbols (the Rebus principle). Egyptian Narmur palate
+- Try to abstract to symbols and medium. Same in computing sense
+- Around 650BC demotic script. Reduction in symbols with phonetic symbols as opposed to whole word symbols. Egyptian hieroglyphics
+- Phoenician alphabet. Idea of alphabet. Information is a collection from a set of possible symbols.
+- https://youtu.be/gBKBKfikLbo how do we increase the efficiency of the symbols we use
+- I still struggle to see how yes or no question can translate into all the symbols of the alphabet. Its just the number of repetitions. If we group the yes or no questions into 5's we can represent 32 combinations, this way we can express the full alphabet.
+- Look at it from the view of a decision tree
+- Lightning and link to static charge
+- So far assuming symbol space is random
+- Information is a spectre
+- Information is the reduction of a symbol space on iteration. It has nothing to do with meaning but also everything to do with meaning.
+- Can we think of the computer now as the medium ? is it this symbol space created by electronic signals?
+- I cant even understand basic theorems
+- Entropy in the sense of incalculable positions of particles. Uncertainty can be related to entropy in communication sense. The more idea we have of what the next symbol will be the less new information it contains.
+- There seems to be a seperate meaning for information in other spaces. For instance, in defining the world. Information in particle positions etc. 
+- Introduction to Information Theory - Pierce
+    - "Newton's laws brought about a scientific and a philosophical revolution. Yet, they do little to answer many of the questions about motion which Aristotle considered"
+    - "Science looks for things in nature, including our human nature and activities, which can be grouped together and understood"
+    - In this way we shouldn't expect communication and information theory to answer every question about every possible way in which the two terms are used.
+    - Geometry and arithmetic are mathematically theories that can breakdown in some cases describing actual phenomena as they describe an ideal sort.
+    - The first player can win. The way I interpreted this
+        - If theres a hypothetical winning strategy and player one starts it after his first move and player two starts it on their first move. Its possible that player 2 will be blocked from performing its strategy so player one must win (in that case).
+    - "Mathematics is a way of finding out, step by step, facts which are inherent in the statement of the problem but which are not immediately obvious"
+    - Entropy is uncertainty. In a reversible process entropy does not increase. That is our knowledge of the system is not reduced. We can repeat it (can keep track of molecular positions?)
+    - "The lesson provided by Morse's code is that it matters profoundly how one translates a message into electrical signals. This matter is at the very heart of communication theory"
+    - Over a time a signal elongates, so at the receiving end you might receive a more smooth or hard to reconcile form of the original signal.
+    - Interesting example with single current telegraphy vs quadruplex telegraphy. For 4 symbols we can represent two simultaneous messages. "We can send twice as many letters per minute
+by using four current values as we could using two current values." This is complicated by the integrity of the communication on the receiving end
+    - "[Fourier] showed that any variation of a quantity with time can be accurately represented as the sum of a number of sinusoidal variations of different amplitudes, phases and frequencies"
+    - Linearity in the circuits. We expect that successive input signals go through the same circuit. The conditions (or environment) for each sent signal remains the same.
+        - might have to come back to this
+    - Nyquist sets the number of combinations as the line speed. So the amount of messages that can be sent for 2 symbols is $$log_2{2}$$  which is 1. And for Edison's 4 symbol system its theoretically $$log_2{4}$$  which is 2. 
+    - The base determines the size of a given symbol in the message. For instance in the case of base 2 we are saying that we have a 0 or 1 decision process that make up the message. If it was base 10 we would be using one of 10 symbols to convey the 'letters' of the message
+    - Primary and secondary symbols I seem to have had the wrong way round. I viewed the primary as the electric currents and the secondary as letters (in the alphabet for example)
+    - Didnt really understand nyquists line speed stuff

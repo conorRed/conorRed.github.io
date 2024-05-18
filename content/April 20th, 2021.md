@@ -1,0 +1,22 @@
+- [[April 23rd, 2021]] Talk with John breslin 14:28
+    - Lack of skills or know how
+    - Profile in the area you want to be in
+    - recommendaion on getting contacts with college or the like
+    - speak to the people in the jobs
+    - create critical mass
+    - research, revue
+    - 14:56 Overall, I feel underwhelmed I guess. I kind of expected that. Not underwhelmed in the advice I was given but in the next steps that I know are probably right. I think the communities are already there though.
+- Material UI
+- #spelunking what is the goal of the dsl ?
+    - To transform the build.gradle file into Kubernetes objects.
+        - Why?
+        - How? creates them by parsing the build gradle file and calling the api with the corresponding object fields.
+        - ISDP_CONFIG
+        - Groovy classes, getters and setters. Added to buildSrc to be used
+        - Current time to log throughout the day
+        - ctrl shift d for daily notes
+        - To want page, make pages out of everything
+        - Tag todos so that they can be filtered on todo page
+- Tenacious at the right level of your goal hierarchy. Angela Duckworth
+- Man Im so fuckin sick of work
+-

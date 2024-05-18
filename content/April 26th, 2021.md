@@ -1,0 +1,24 @@
+- [[physics]] [[calculus]] 07:16
+    - definite [[integral]] vs indefinite [[integral]]
+        - A definite integral definite [[integral]]  is a number. An $$\int{f(x)dx} $$ the collection of antiderivates of f, or the **indefinite** [[integral]] of $$f$$ wrt $$x$$ is a [[function]] plus an arbitrary constant 
+- #spelunking
+    - 09:46 practice run
+        - Get feedback on my internet
+        - Will I include rolling upgrade part?
+        - spend more time on the use case?
+        - documentation
+        - zoom video i movie speed up quick time
+        - ISDP API sits on Kube creating declarative
+        - Run is emphermal has a start and an end
+        - screenshot of native vs jenkins executor
+        - why choose gradle?
+            - widely adopted
+            - java to run, 
+- [Eating less meat wont save the planet](https://www.youtube.com/watch?v=sGG-A80Tl5g&t=1s)
+    - If the whole of the US went vegan, ghg emissions would be reduced by 2.6%.
+    - Cattle water consumption is majority rainwater.
+    - Almonds use more water than beef? 95.5% of California almond usage is not green water. 10 times more than beef.
+    - 2/3 of ag. land in the world cant grow crops there, marginal hilly, poor soil could only be made use of by livestock. They up-cycle not human edible feed.
+    - what about non sustainable land use
+    - US agriculture is very efficient. A lot more efficient than the likes of India. India could produce the same amount of dairy they produce now, with 10 times fewer cows. Increase in productivity! growth
+    - Another smoke screen for climate change impact [[?]]

@@ -1,0 +1,22 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+Acids	chemistry.tex	/^    \\subsection{Acids}\\label{acids}$/;"	u
+Atomic Structure	chemistry.tex	/^\\subsection{Atomic Structure}\\label{atomic-structure}$/;"	u
+Boiling	chemistry.tex	/^\\subsubsection{Boiling}\\label{boiling}$/;"	b
+Chemical Equilibria	chemistry.tex	/^\\section{Chemical Equilibria}\\label{chemical-equilibria}$/;"	s
+Chemistry	chemistry.tex	/^    \\section{Chemistry}\\label{chemistry}$/;"	s
+Freezing and Melting	chemistry.tex	/^\\subsubsection{Freezing and Melting}\\label{freezing-and-melting}$/;"	b
+Integrated rate laws	chemistry.tex	/^\\subsection{Integrated rate laws}\\label{integrated-rate-laws}$/;"	u
+Mixtures and solutions	chemistry.tex	/^    \\subsection{Mixtures and solutions}\\label{mixtures-and-solutions}$/;"	u
+Organic Chemistry	chemistry.tex	/^\\section{Organic Chemistry}\\label{organic-chemistry}$/;"	s
+Physical Equilibria	chemistry.tex	/^\\section{Physical Equilibria}\\label{physical-equilibria}$/;"	s
+Precipitation reaction	chemistry.tex	/^    \\subsection{Precipitation reaction}\\label{precipitation-reaction}$/;"	u
+Reaction Quotient	chemistry.tex	/^\\subsection{Reaction Quotient}\\label{reaction-quotient}}$/;"	u
+Reactions	chemistry.tex	/^    \\section{Reactions}\\label{reactions}$/;"	s
+Solids	chemistry.tex	/^\\subsection{Solids}\\label{solids}}$/;"	u
+VSPER Model	chemistry.tex	/^\\subsection{VSPER Model}\\label{vsper-model}}$/;"	u
+Vapor Pressure	chemistry.tex	/^\\subsubsection{Vapor Pressure}\\label{vapor-pressure}}$/;"	b

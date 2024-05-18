@@ -1,0 +1,22 @@
+- Income tax slog through mainly figuring out what I owe with my degiro stuff
+    - Define the type of investment it is. And what needs to be declared
+    - Remember, that if you want Revenue to calculate your Income Tax for you in time to meet your Pay and File
+obligations you must file your Tax Return on or before 31 August 2020. Alternatively, you can file your Return
+Online using the Revenue Online Service (ROS), which will calculate your liability automatically ? 
+    - God its so boring
+- Effective altruism key ideas read through
+- Ok, feeling unfocused. Lets define some goals for today. 
+    - {{[[DONE]]}} Read for 2hrs (Europe)
+        - Finished the first hour, dense enough. Interesting to learn about the 12th century renaissance and the schism between the churches of the East and West. But the general disputes between regions I have no mental model of.
+        - Struggling 
+    - {{[[TODO]]}}  Research electric charge. Specifically, getting a concept of what it is, what are the tangible aspects of it.
+        - Electric charge is a conserved property.
+        - "If a body is accelerating, then there is a force on it"
+        - "in order to understand physical laws you must understand that they are all some kind of approximation"
+        - Feynman talks about how some forces get more and more complicated the deeper you dive
+        - Im starting to get a better idea of constants too, or maybe coefficients that depend on the material.
+        - In Physics lots of laws are approximate. I can see how its not pure maths In a way. 
+        - My general thoughts being that charge is a property we observe in nature of particles. It emits a field where behaviour is determined by formulas 
+        - Would be interested to see where the coefficients come from
+    - {{[[DONE]]}} Effective Altruism key ideas post
+        - I would say just get started as opposed to finishing the whole thing.

@@ -1,0 +1,28 @@
+-  Amazon list  
+    - shoes
+- {{[[DONE]]}} Finish Spike for [[OPSENG-31364]] 
+    - The stepflow library looks crazy elegant. 
+    - Think its defined in the deploy object, or at least one of the steps in the wpc deploy info object
+    - Just about determining where to put the timing configuration. Could it be in the stepflow library itself to apply to all deployments?
+    - The retry method just looks for what to do from the passed in error handler whenever an error is returned for the passed in steps
+    - Nested retry loop with a custom Artifact timeout handler would work (i think)
+    - {{[[TODO]]}} Still confused as to what the exchange is 
+    - {{[[DONE]]}} how did we find out the issue with paper yday?
+    - Do I look at creating Jira's for imiplementation?
+- {{[[DONE]]}} Write up contribution goals
+- Reactive manifesto. Service oriented programming. https://www.youtube.com/watch?v=tBw0i2CW0mA
+    - TDD will play a large role in reliability of a system
+    - SD about learning (business need) and managing complexity. 
+    - Prediction: expanding capacity of the above through machines.
+    - Scientific method for SE: Iteration, Feedback, Incrementalism, Experimentations and Empiricism
+    - Mange complexity with modularity cohesion etc.
+    - Automated testing encourages these things
+- [[Kelsey Hightower "Docker and the future of Operating Systems]] (https://www.youtube.com/watch?v=D_eMzS0QlLs)
+    - Distributed Operating System. 
+        - Need really good API's to build around
+        - So if we look at the application as being a container. How do we tackle state, the database. 
+            - Using a replication controller to act as a babysitter for the mysql application, to keep it up and running. Attach a volume to the mysql database, think this volume is important in a network sense
+            - So if the database is deleted how to we keep the State of the database (aka maintain is data). Taking away the storage from an individual machine.
+            - Injecting configuration files as a singular secret. Similar to ISDP config
+            - Should not have to log into a singular system to debug Kubernetes
+            - [[Kubernetes]] working with services[[?]]

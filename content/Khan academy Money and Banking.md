@@ -1,0 +1,52 @@
+- #Banking #Finance #money
+- Really trying to get comfortable with terms like economic growth and its interplay with credit.
+    - **Economic growth describes an increase in the quantity and quality of the economic goods and services that a society produces**
+    - Also, its the potential for action and creation for the good of the community
+- Fractional reserve banking
+    - Is a good idea to add money to the economy
+    - M0 how much gold? Narrowest definition how much of hard metal is there. Stuff we put value on.
+    - M1 how much money do people think they have? This is the confusing money supply
+    - The M! money, represents real money if everything it was used for was a 'real' investment (if it will generate more than it used) becomes a real asset. Big giant asset.
+    - https://youtu.be/F7r7l1VG-Tw
+    - Money supply growing slower than wealth. **Money is not wealth, it represents wealth. **Uses production of apples as an example.
+- Bank notes
+    - Meets the need of some form of exchange
+    - [[thoughts 🤔]] #learning 
+        - I seems to me that often times a need, for instance in banking or the crypto world is plucked out of thin air. The need for consensus, the need for exchangeable currency, all these things often, to me, dont seem self evident, and it is tough to know where to start to discover where the need is emergent from
+    - Should get used to seeing things in assets and liabilities.
+    - Layer the bank notes as another liability on top of the gold pieces that people give you. You could also lay another liability, that of the checking account
+- You can essentially create any number of receipts or claims to the value store as a bank
+- What happens if the bank is earning interest in bank notes? It that not claims to what they already have?
+- Bank **solvency**, if it had time it would get loans back, its assets are greater than its liabilities.
+- **Liquidity**, how much hard value stores can you offer it everyone came looking for it immediately
+    - Could sell assets if they're good, to become more liquid.
+- [[leverage]]
+    - Ratio of Assets to equity. There is risk associated with the assets. 
+    - When liabilities become greater than assets it eats into your equity.
+- Unpredictability with multiple banks, difference in bank notes, reserve ratios, preventing bank runs (because there may be solvency in other banks)
+- Reserve bank
+    - Reserve bank, to aggregate all the hard stores of value from the different banks. Now banks own checking accounts in the central bank. Only one central bank note.
+    - The reserves of the individual banks now become central bank notes
+- FED control money supply through open market transactions
+- This is the transfer of money between banks, banks can charge eachother for becoming more liquid
+    - They are more likely to lend, reducing the interest rates. Every deposit increases ability to lend. 
+    - Increasing reserves increasing banking lending.
+- Why target interests rates vs money supply
+    - There isn't enough real time info on money supply
+    - Elastic money supply, having money available when its needed or could get good yields. Passing on good projects with high demand, and giving money to bad projects when low demand.
+- gold would have to grow with the economy if we kept it
+- Backed by gold vs the government, which is actually equal to wealth.
+    - If you trust the governments ability to manage the money supply effectively, then you would probably rather the later.
+- **Wealth: The land and the labour that produce utility for humans. And tools and produce that help us achieve the above**
+- Money: Medium of exchange for wealth.
+    - Gold is scarce, which makes it inflexible but also less manipulatable 
+    - Vice versa for money
+- Fed funds rate vs Discount rate
+    - Target rate that uses open market operations (buying t bills) which in turn puts more cash in banks. Rates get lower for banks with more of this money.
+    - What if banks become sceptical of one another, in that, when they have more deposits they dont want to lend to banks that need more liquidity as they question the bank they're lending to.
+    - Discount rate, what a bank pays the Federal reserve when it cant borrow from another bank over night. Discount rate normally higher than the FED fund rate (to discourage just going to the reserve)
+- Repurchase agreement: way of legalising ownership of collateral for the lender. And paying the loan allow repurchase of the collateral.
+- Federal reserve uses treasuries from the bank as collateral 
+    - Treasuries: loans to the federal government
+    - Make up the bulk of the FED's assets
+- How does an increase in income mean growth in economy[[?]]Î

@@ -1,0 +1,707 @@
+\documentclass[11pt]{article}
+
+% basic packages
+\usepackage[margin=1in]{geometry}
+\usepackage[pdftex]{graphicx}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{custom}
+
+% page formatting
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+\renewcommand{\sectionmark}[1]{\markright{\textsf{\arabic{section}. #1}}}
+\renewcommand{\subsectionmark}[1]{}
+\lhead{\textbf{\thepage} \ \ \nouppercase{\rightmark}}
+\chead{}
+\rhead{}
+\lfoot{}
+\cfoot{}
+\rfoot{}
+\setlength{\headheight}{14pt}
+
+\linespread{1.03} % give a little extra room
+\setlength{\parindent}{0.2in} % reduce paragraph indent a bit
+\setcounter{secnumdepth}{2} % no numbered subsubsections
+\setcounter{tocdepth}{2} % no subsubsections in ToC
+
+\begin{document}
+
+% make title page
+\thispagestyle{empty}
+\bigskip \
+\vspace{0.1cm}
+
+\begin{center}
+{\fontsize{36}{36} \selectfont \bf \sffamily }
+\vskip 24pt
+{\fontsize{18}{18} \selectfont \rmfamily } 
+\vskip 24pt
+\end{center}
+
+{\parindent0pt \baselineskip=15.5pt \lipsum[1-4]}
+
+% make table of contents
+\newpage
+\microtoc
+\newpage
+
+% main content
+\hypertarget{statistical-rethinking}{%
+\section{Statistical Rethinking}\label{statistical-rethinking}}
+
+\emph{notes from book and youtube videos given by McElreath}
+
+\textbf{A regression} is a statistical technique that relates a
+dependent variable to one or more independent (explanatory) variables
+
+\hypertarget{lecture-2}{%
+\section{Lecture 2}\label{lecture-2}}
+
+\begin{itemize}
+\tightlist
+\item
+  The goal is to make a generative model for globe tossing.
+\item
+  We have a couple variables for this p,W,N,L. We want to think causally
+  (scientifically) about the connections between the variables.
+\item
+  For each possible proportion of water on the globe. Count all the ways
+  the observed tosses could happen. Proportions with more ways to
+  produce the sample are more plausible.
+\item
+  The garden of forking paths iterate based on tosses. So you've a
+  stated globe and then you just march through it's permutations (sample
+  space). You selectively go through and see where the data could pop
+  up.
+\item
+  No point estimates, use whole posterior distribution.
+\item
+  Intervals communicate shape of posterior distribution.
+\item
+  Posterior prediction is a prediction for a future experiment or
+  observation that's made from your existing estimate (or posterior).
+\item
+  `Given what we've learned so far what would happen if\ldots{}' make a
+  bet about future tosses of the globe in this case.
+\end{itemize}
+
+\hypertarget{section}{%
+\subsection{14/02/23 07:58:47}\label{section}}
+
+\begin{itemize}
+\tightlist
+\item
+  The idea for sampling is to, take sample from the posterior, in
+  proportion to their plausibility.
+\item
+  Then, simulate a large number of n tosses, with that p value
+  (proportion of water).
+\item
+  This will result in a distribution of waters over n tosses for that
+  value.
+\item
+  Then taking the central value (or some average value of that)??
+\item
+  The posterior predictive distribution is then a distribution with a
+  summation of these central values over the n tosses.
+\end{itemize}
+
+\hypertarget{lecture-1}{%
+\section{Lecture 1}\label{lecture-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Learning statistics to use it for scientific questions.
+\item
+  Causal inference implies some predictive aspect to the model.
+\item
+  Causal imputation, be able to observe counterfactuals, or `what ifs'?
+\item
+  T tests and general statistic often used to test null hypothesis,
+  McElreath says that research science is about more than this kind of
+  quality control, useful in industry (t test to get same experience)
+  and experimental science.
+\item
+  These industrial controlled settings are not the norm, the ability to
+  do experimental interventions is limited. Call these `observational'.
+\item
+  The notion is to create generative models from DAG's or process
+  models. This can generate `dummy data'. Then we hope to create
+  statistical models that can analyse the synthetic data. Then you might
+  provide it with real data.
+\item
+  Bayesian data analysis allows you to take the assumptions from your
+  generative model and confront them with the least fuss (?)
+  \textasciitilde{}39 min.
+\item
+  Bayesian models are generative, so it aligns with the models
+  underlying how we're approaching answering scientific questions.
+\item
+  Drawing the Bayesian Owl
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Theoretical estimand, what is it we're trying to predict or answer a
+    question about.
+  \item
+    Causal model, develop some sort of causal model that eventually,
+    should be generative.
+  \item
+    Use the previous steps to build a statistical model.
+  \end{itemize}
+\item
+  Dag's: Transparent scientific assumptions to justify effort, expose to
+  critique and connect theories to golems.
+\item
+  Golems: Statistical models or devices (brainless).
+\item
+  Owls: Procedures and quality assurances (being conscious of workflow).
+\end{itemize}
+
+\hypertarget{lecture-3}{%
+\section{Lecture 3}\label{lecture-3}}
+
+\emph{workflow, from a scientific question, to the development of a
+causal model and from there to a Bayesian estimator}
+
+\begin{itemize}
+\tightlist
+\item
+  Trying to make that distinction between a statistical model, like
+  linear regression and a causal model. So we project some causal model
+  on to the `geocentric' model that is linear regression (really
+  accurate but it's causality doesn't exist).
+\item
+  There are many more ways for a sequence of coin tosses to put you on
+  the half way line than away from it.
+\item
+  The coin toss reduces likelihood that you'll get a sequence of right
+  or left movements.
+\end{itemize}
+
+Gaussian is a model with very little assumptions (mean and variance).
+
+\begin{enumerate}
+\def\labelenumi{(\arabic{enumi})}
+\tightlist
+\item
+  State a clear \emph{question} Describe the association between adult
+  height and weight
+\item
+  Sketch your causal assumptions. Causal model: weight is some function
+  of height.
+\item
+  Use the sketch to define a \emph{generative} model Assume that they
+  effect each other with no mechanism.
+\item
+  Use the generative model to build an \emph{estimator} Want to estimate
+  how the average weight changes with height.
+\end{enumerate}
+
+Conceptually useful to defined unobserved things that might affect
+height (eg causality).
+
+Generative model starts out as
+\(W = \betaH + U (\text{unobserved stuff})\).
+
+Estimator: \(E(W_i|H_i) = \sigma + \betaH_i\).
+
+\begin{itemize}
+\tightlist
+\item
+  When you plot out your assumptions, at about the 55 min mark, it's
+  interesting to maybe see how wild your assumptions are!
+\item
+  There are no correct priors, just scientifically justifiable ones.
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{\linethickness}\end{center}
+
+\hypertarget{chapter-1}{%
+\section{Chapter 1}\label{chapter-1}}
+
+\begin{itemize}
+\item
+  I struggled with the example about neutral theory of evolution as a
+  hypothesis
+\item
+  It seems that he's arguing against the falsifying of null hypotheses
+  and for creating multiple non-null models of the natural phenomena.
+  This is like creating explanations that can be falsified (Deutsch?)
+\item
+  \begin{quote}
+  In order to challenge these process models with evidence, they have to
+  be made into statistical models. This usually means deriving the
+  expected frequency distribution of some quantity-a ``statistic''- in
+  the model
+  \end{quote}
+\item
+  Change your explanation to fit the process models and the statistic
+  models they produce in accordance with the observed data
+\item
+  \begin{quote}
+  Bayesian inference is no more than counting the number of ways things
+  can happen, according to our assumptions. Things that can happen more
+  ways are more plausible
+  \end{quote}
+\item
+  Frequentist approach struggles when there is no sampling invariance.
+  The example used is Galileo looking at a blurred Saturn with its
+  rings, no amount of re sampling will resolve the uncertainty present
+  in the technology. The uncertainty is not a function of the repeated
+  measurements
+\item
+  With the Bayesian method this uncertainty in the information can be
+  modelled.
+\item
+  \begin{quote}
+  Bayesian golems treat ``randomness'' as a property of information, not
+  of the world
+  \end{quote}
+\item
+  Nothing in the real world is actually random it just lacks information
+  (hmmm?)
+\item
+  \begin{quote}
+  We just use randomness to describe our uncertainty in the face of
+  incomplete knowledge
+  \end{quote}
+\end{itemize}
+
+\hypertarget{chapter-2}{%
+\section{Chapter 2}\label{chapter-2}}
+
+\hypertarget{section-1}{%
+\paragraph{2.2}\label{section-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  A \emph{conjecture} is usually called a \emph{parameter}.
+\end{itemize}
+
+I kind of like this example of the water on the globe. It's kind of what
+you're trying to always do with Bayesian Analysis (I think) which is
+postulate a state of the world.
+
+Basic design loop: * Data story: Narrating how the data might arise. Can
+be descriptive and causal. Almost as if the data is a character, and
+you're trying to find motivations of why it exists or the reason it is
+the way it is.
+
+``Bayesian data analysis usually means producing a story for how the
+data came to be''.
+
+\begin{itemize}
+\tightlist
+\item
+  A Bayesian model begins with a set of plausibilities for each
+  conjecture (priors).
+\end{itemize}
+
+\hypertarget{evaluate}{%
+\subsubsection{Evaluate}\label{evaluate}}
+
+The inference is perfect, provided the model is perfect (which it's not
+always, map and the territory).
+
+\hypertarget{components-of-model}{%
+\subsubsection{Components of Model}\label{components-of-model}}
+
+\begin{itemize}
+\tightlist
+\item
+  The no. of ways each conjecture could produce the observation.
+\item
+  The accumulated no. of ways each conjecture could produce the entire
+  data.
+\end{itemize}
+
+Unobserved variables (in our case, the proportion of water) are usually
+called \emph{parameters}. We can then have observed variables, like what
+we draw from the bag of marbles, or what comes up under our finger
+tossing the globe (W or L).
+
+Assign plausibility of p with the data (observables). We were able to
+defined the `state of the world' through one variable p in the marble
+case (that is, the proportion that were blue).
+
+The story as McElreath puts it is that we have to events, W and L.
+Nothing else can happen. We are given a string of 9 events (in this
+examples). Out of all the possible worlds where 9 events occur, with our
+parameter p defining what is the case, what is the plausibility of the
+string of 9 events we have.
+
+A binomial distribution is counting the paths for you. For a given
+proportion of water to land, it's saying how many So we have some
+variable p, that constrains our sample space. On determining a new path,
+p is ever present. We have W, L which we might consider the data. The
+observables. Given that
+
+\begin{itemize}
+\tightlist
+\item
+  Rethinking datum/parameter? Data is normally considered `known' and
+  `parameters' unknown.
+\end{itemize}
+
+\hypertarget{section-2}{%
+\paragraph{2.4}\label{section-2}}
+
+Or story is we want to know the plausibility of p given some observable
+W out of N tosses.
+
+The binomial distribution gives us a set of plausibilities for
+P(W,L\textbar{}p). We just want this for every p.
+
+The initial goal was to determine which conjecture, out of a set of
+conjectures was the most plausible given some data. In the marble
+example, we had 4 possible conjectures. Moving on to the globe example,
+the conjectures are all the possible states of the world (literally),
+this state is defined by the proportion of water to land.
+
+Plausibility for a given conjecture is proportional to the plausibility
+of the data given the state of the world is our conjecture times the
+plausibility of that world being the case (prior).
+
+This prior can also be thought of as the prior number of paths (for some
+previous data say). So it's just counting paths.
+
+\hypertarget{chapter-2-1}{%
+\subsection{Chapter 2}\label{chapter-2-1}}
+
+\begin{itemize}
+\tightlist
+\item
+  Small world vs large world. The example of Behaim's globe is used (it
+  doesn't have the Americas in it). While the small world model is
+  internally consistent is doesn't represent reality fully. It's this
+  interplay between your small world (model) and reality thats
+  important.
+\item
+  Follows on here from the Bayesian inference explanation above. Looking
+  at the garden of forking paths in which alternative events are
+  cultivated as we learn what did happen some of these alternatives are
+  pruned. In the end what remains, is what is logically consistent with
+  our knowledge
+\item
+  Counting the possible paths then becomes a multiplication of the
+  possible paths on each ring (in the example)
+\item
+  Marble example (I think p here is just a way of numerically describing
+  the no. of blue marbles)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A conjectured proportion of blue marbles \textbf{p} is usually
+    called the \textbf{parameter} value. It's just a way of indexing
+    possible explanations of the data.
+  \item
+    The relative number of ways that a value \textbf{p} can produce the
+    data is usually called the \textbf{likelihood}. It is derived by
+    enumerating all the possible data sequences that could have happened
+    and then eliminating those sequences inconsistent with the data
+  \item
+    The prior plausibility of any specific \textbf{p} is the
+    \textbf{prior probability}
+  \item
+    The new, updated plausibility of any specific \textbf{p} is the
+    \textbf{posterior probability}
+  \end{itemize}
+\end{itemize}
+
+2.2 Building the model
+
+\begin{itemize}
+\tightlist
+\item
+  Creating a data story. A narrative of why we are getting the
+  observations. Viewed as important as it makes you think of the
+  variables you really need to consider, get a bit more exact about
+  chain of events (creating something hard to vary?)
+\item
+  walks through Bayesian updating, the amount of evidence we have is
+  embodied in the plausibility (straight line at the start vs complex
+  curve at the end). The final figure is normally shown but its
+  important to know that it is just an iterative development from the
+  first figure.
+\item
+  Some tips given for evaluation, they seem rather abstract at the
+  moment though with my current knowledge
+\item
+  Now we look at mapping some of the concepts from the previous section
+  to build up the model
+\end{itemize}
+
+\hypertarget{likelihood-function-1-the-number-of-ways-each-conjecture-could-produce-an-observation}{%
+\subsubsection{Likelihood function (1) the number of ways each
+conjecture could produce an
+observation}\label{likelihood-function-1-the-number-of-ways-each-conjecture-could-produce-an-observation}}
+
+\begin{itemize}
+\tightlist
+\item
+  Because both outcomes (W and L) are equally likely, and independent we
+  look at all the ways our sample size of 9 (n) could appear to us.
+\item
+  The binomial distribution calculates the relative no. of ways to get
+  six W's with 9 tosses holding p at 0.5
+\item
+  Looking at the parameters to the binomial function p, n and w they can
+  each represent different conjectures once we can tell the likelihood
+  and what has been observed
+\item
+  In the sciences, the prior is considered part of the model, there is
+  no reason not to interrogate it like other assumptions.
+\item
+  Bayesian estimate is always a distribution over the parameters
+\item
+  Posterior is proportional to the product of the prior and the
+  likelihood
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Count up all the ways you could see the data and multiply by the
+    priors (look at table for marbles)
+  \end{itemize}
+\item
+  Grid approximation builds up from the marble example. With just 3
+  possible values for water (0, 0.5 and 1) 0.5 wins out with in 3
+  tosses. If we bump up the possible values to 20 though we get a more
+  accurate display of possible values (posteriors)
+\end{itemize}
+
+\hypertarget{chapter-3}{%
+\subsection{Chapter 3}\label{chapter-3}}
+
+\begin{itemize}
+\item
+  Whenever the condition of interest is very rare, having a test that
+  fins all the true cases is still no guarantee that a positive result
+  carries much information at all.
+\item
+  \begin{quote}
+  randomness is always a property of information, never of the real
+  world
+  \end{quote}
+\item
+  Why sampling of model output, should apply to every model in the book
+  ?
+
+  \begin{itemize}
+  \item
+    \begin{quote}
+    It is often easier and more intuitive to work with smaples from the
+    posterior, than to work with probabilities and integrals directly
+    \end{quote}
+  \item
+    Where getting integrals is computationally expensive?
+  \end{itemize}
+\item
+  Interesting note box here. Why statistics can't save bad science.
+  Suppose the probability of a positive finding and a false positive
+  rate thats very low. If the probability of the prior, that is the
+  probability of any hypotheses you posit in general being true is low,
+  the best you could probably do is 0.5 (in terms of the posterior that
+  the finding indicates the hypothesis is true). The lesson here being
+  that no amount of accurate instrumentation can account for bad
+  hypothesis (or explanations)
+\item
+  \begin{quote}
+  These posterior intervals report two parameter values that contain
+  between them a specified amount of posterior probability, a
+  \textbf{probability mass}
+  \end{quote}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    parameter value being something on the spectrum of the parameter
+    value (in this case 0 -\textgreater{} 1 the proportion of water)
+  \end{itemize}
+\item
+  \begin{quote}
+  95\% is a small world number.. true in the model's logical world
+  \end{quote}
+
+  \begin{itemize}
+  \tightlist
+  \item
+    On interpreting confidence intervals
+  \end{itemize}
+\item
+  Loss function. If you were to make a bet on what the correct parameter
+  value is. Where to cost is proportional to your distance from the
+  `correct' answer
+\item
+  \begin{quote}
+  Given a realized observation, the likelihood function says how
+  plausible the observation is. And given only the parameters, the
+  likelihood defines a distribution of possible observations that we can
+  sample from, to simulate observation
+  \end{quote}
+\item
+  Posterior predictive distribution
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The top graph is the posterior distribution, for each parameter we
+    are running is through a binomial distribution of 9 tosses as if the
+    correct proportion p is that chosen parameter (so set p to 0.1 and
+    run a simulation with p as 0.1 and see what posterior distribution
+    you get as a result from 9 tosses). The initial posteriors are
+    multiplied then by each sampling distribution and the final
+    predictive distribution is shown
+  \item
+    Passing the uncertainty of all parameters down is important so that
+    the model does not appear more confident than it in the prediction
+  \end{itemize}
+\item
+  Highlights different ways to analysis the model through alternative
+  ways of a predictive distribution looking to see if the globe could be
+  bias by the amount of times its switched, as an example
+\end{itemize}
+
+\hypertarget{section-3}{%
+\subsubsection{3.2}\label{section-3}}
+
+Sampling can be done to summarise the posterior.
+
+\hypertarget{section-4}{%
+\subsubsection{3.3}\label{section-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  Bayesian models are always \emph{generative}.
+\item
+  Generating implied observations from a model is useful
+
+  \begin{itemize}
+  \tightlist
+  \item
+    We can also sample from the prior, seeing what the model expects can
+    tell us a lot about our assumptions, or the implications of our
+    prior.
+  \item
+    For testing, running through known data and checking that our model
+    simulates expected observations.
+  \end{itemize}
+\item
+  From chapter 2, we developed a model that built up a likelihood
+  function based on observed data. We can now use this likelihood
+  function to think about what we might observe next.
+\end{itemize}
+
+\hypertarget{chapter-4}{%
+\subsection{Chapter 4}\label{chapter-4}}
+
+\begin{itemize}
+\tightlist
+\item
+  Linear Regression is the geocentric model of applied statistics. A
+  family of simple statistical golems that attempt to learn about the
+  mean and variance of some measurement, using an additive combination
+  of other measurements (compared to a fourier series)
+\item
+  Useful in a lot of cases, and foundational. Not universal though
+  (obviously)
+\item
+  Any process that adds together random values from the same
+  distribution converges to a normal.
+
+  \begin{itemize}
+  \tightlist
+  \item
+    The more terms the more likely values get cancelled out, so large
+    deviations from the center by other large (or lots of small)
+    deviations the other way.
+  \item
+    Interacting deviations for growth (multiplications) as long as they
+    are sufficiently small converge to a Gaussian distribution
+  \item
+    The flip of a coin and go right or left is a good example. The
+    further away you get from the midline the less likely you are to go
+    further away (as the coin is fair). Any distribution of people doing
+    this is more likely to end up around the midline.
+  \end{itemize}
+\item
+  Justifications for Gaussian
+
+  \begin{itemize}
+  \tightlist
+  \item
+    ontological: Measurement errors, variations in growth, and the
+    velocities of molecules all tend towards Gaussian distributions.
+    They do this because they all add together fluctuations. The
+    Gaussian distribution is a member of the exponential family of
+    distributions.
+  \item
+    Epistemological: It represents a particular state of ignorance. When
+    all we know about a series of measurements is there mean and
+    variance, this distribution arises. If we produced any other
+    distribution it assumes we have some other particular knowledge
+    about measurements we are taking. Or something that the Golem should
+    know about.
+  \end{itemize}
+\item
+  Probability distributions with only discrete outcomes, like the
+  binomial are usually called probability mass functions. Continuous
+  ones like the Gaussian are called probability density functions.
+  Probability densities can be greater than 1
+\item
+  p.77 the language for describing models (can I translate this to the
+  chpt 2 example?)
+
+  \begin{itemize}
+  \tightlist
+  \item
+    A set of outcome variables that we hope to predict or understand.
+    It's an outcome in both sense whether measured or predicted.
+  \item
+    For each of these outcome variables we define a likelihood
+    distribution that defines the plausibility of individual
+    observations
+  \item
+    We have predictor variables that we hopefully use to understand or
+    predict the outcome
+  \item
+    \textbf{Fundamentally, these models define the ways values of some
+    variables can arise, given values of other variables}
+  \end{itemize}
+\item
+  tilda used for stochastic. It marks a relationship between a parameter
+  or variable onto a distribution. For instance, where we don't know the
+  true proportion p of water.
+\end{itemize}
+
+\hypertarget{linear-model}{%
+\subsection{4.4 Linear model}\label{linear-model}}
+
+\begin{itemize}
+\tightlist
+\item
+  We can see from plotting height against weight that there's some
+  association between the two variables.
+\item
+  In the simple case we're going to view it as linear. With an observed
+  height we can predict weight using a linear function.
+\item
+  The predictor variable is weight, the outcome variable is height.
+\item
+  For a linear model, we instruct the golem to assume tat the predictor
+  variable has a constant additive relationship to the mean of the
+  outcome. The golem then computes the posterior distribution of this
+  constant relationship.
+\end{itemize}
+
+\hypertarget{chapter-5}{%
+\section{Chapter 5}\label{chapter-5}}
+
+\end{document}

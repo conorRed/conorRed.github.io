@@ -1,0 +1,5 @@
+- Reading Ray Dalio debt cycles etc. 
+    - https://www.bridgewater.com/research-and-insights/why-in-the-world-would-you-own-bonds-when
+    - Dont really understand it but interesting
+    - https://www.principles.com/the-changing-world-order/#introduction 
+    - Jeez Ray Dalio writes A LOT 

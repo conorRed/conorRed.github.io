@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="Conor Redington" />
+  <title>gdp_per_capita_vs_energy_usage_per_capita</title>
+  <style type="text/css">
+      code{white-space: pre-wrap;}
+      span.smallcaps{font-variant: small-caps;}
+      span.underline{text-decoration: underline;}
+      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  </style>
+  <link rel="stylesheet" href="/home/conor/.local/share/pandoc/pandoc.css" />
+</head>
+<body>
+<h1 id="total-primary-energy-supply-vs-gdp-per-capita">Total Primary Energy Supply vs GDP per capita</h1>
+<p><em>Conor Redington</em></p>
+<ol type="1">
+<li>What are the relevant factors be taken into account for this comparison?
+<ol start="2" type="1">
+<li>The graph used in the lecture slides is measured in PPP with 1995 US dollars, meaning all country data is normalised comparing a basket of goods between the countries and how much these goods cost in the US in 1995. e.g. If sliced pan was 1 dollar in the US in 1995 and a similar (or the exact same product) was 1.40$ in Mexico every dollar spent in Mexico is 40% higher than in the US. If Mexico’s GDP then, is 20,000 USD per capita but we know that things are more expensive in Mexico (40% higher) then it’s actual GDP compared to the US using the conversion factor for PPP would be 40% lower.</li>
+<li>Using the example of a big mac. If we use the current dollar it costs 2 dollars for a Big Mac, if we go to Korea and it costs 6 dollars when we measure the GDP of Korea in US dollar and the basket of goods being compared is just one Big Mac then the price level in Korea is much higher so you’re actually poorer for the same dollar amount. If we use the dollar as the base then and update the nominal GDP of Korea to a real one taking into account these differences, we’re left with the PPP GDP of Korea in current USD.</li>
+<li>All economies are being measured in 1995 US dollar, normalised with price levels from a basket of goods. Inflation in the US dollar in this time would effect the value of those GDP’s in today’s terms. If we consider this 1$ from 1995 is worth about $1.886 dollars today. If we take the example of Mexico. In the lecture slide graph it’s GDP finishes (in 2002) at around $8000 dollars in 1995 dollars which using a 1.95 conversion rate is about 15000 dollars today. We can see this in the main graph as Mexico starts around this value.</li>
+<li>Energy Usage seems to be distorted for Australia from the graph in the slides, In the main graph the value hovers between 2202 and 240 GJ for the early 2000’s whereas for the slide graph it’s approximately 300GJ in 2002. This is a large difference one and I’m not sure why, my guess would be maybe in population figures used. For instance, taking the population in Australia in 2002 as 19651400 and the Primary energy supply from the OECD as approximately <span class="math inline">4.56<em>x</em>10<sup>9</sup></span> (109 Mtoe) from the OECD, the GJ per capita is around 232, the IEA has a value of <span class="math inline">4.583<em>x</em>10<sup>9</sup></span>GJ for primary energy supply so that the GJ per capita would be similar.</li>
+</ol></li>
+</ol>
+<h3 id="overview">Overview</h3>
+<figure>
+<img src="img/image_2022-09-30-07-36-09.png" alt="Total Primary Energy Supply (TPES) vs GDP per capita for the 5 countries listed above. With years included for selected countries to indicate general trend. TPES per capita calculated with population data from World Bank" /><figcaption>Total Primary Energy Supply (TPES) vs GDP per capita for the 5 countries listed above. With years included for selected countries to indicate general trend. TPES per capita calculated with population data from World Bank</figcaption>
+</figure>
+<ul>
+<li>The countries chosen were: Australia (Australasia), Mexico (North America), Argentina (South America), South Korea (Asia), Greece (Europe), Uganda (Africa)</li>
+<li>The trend in the graph from the lecture slides has changed for Australia, in that it’s not growing as much anymore. Incredibly poor countries have not increased at any noticeable rate while in the example here, Korea has grown rapidly in the last 20 years like a lot of Asian countries</li>
+<li>Uganda is one of the worlds poorest countries and it’s interesting to note how it’s energy usage is completely dwarfed by those of developed and developing economies. It barely appears on the bottom left of the above graph. Uganda, like many African countries has a high population grwoth rate</li>
+<li>Greece had major setbacks as an economy from the Global Financial Crisis of 2008 and it’s interesting to note this in it’s energy usage as a measure of the austerity it faced and how it’s never really recovered</li>
+<li>Mexico has remained fairly static in terms of growth on either axis in the last 10-20 years compared to the 1980-2002 graph from the lectures. Despite Mexico’s population growing at a fast rate it’s energy consumption has been reducing by -2.4% annually in the last ten years. [^1]</li>
+<li>The PPP, how did that change?</li>
+</ul>
+<h2 id="korea">Korea</h2>
+<p><img src="img/gdpvsenergykorea.png" alt="gdpvsenergykorea" /> * Korea has expected reductions in growth during the in the 1990’s.</p>
+<h2 id="greece">Greece</h2>
+<p><img src="img/image_2022-09-29-20-54-07.png" alt="TPES vs GDP per capita for Greece and Ireland showing a contrast between the two after the global financial crisis" /> * Ireland’s GDP figures are distorted by multinational corporations but there is still a constrast in how</p>
+<h2 id="mexico">Mexico</h2>
+<figure>
+<img src="img/image_2022-09-29-21-29-21.png" alt="TPES vs GDP per capita of Mexico with USA as a stark contrast" /><figcaption>TPES vs GDP per capita of Mexico with USA as a stark contrast</figcaption>
+</figure>
+<h3 id="notes">Notes</h3>
+<ul>
+<li><strong>Primary energy</strong>: Primary energy supply is defined as energy production plus energy imports, minus energy exports, minus international bunkers, then plus or minus stock changes. This is the definition used by the OECD where the primary energy supply data was taken from IEA which uses the same definition.</li>
+<li>Primary energy is considered demand by a country. There are discrepancies with as the value is based on a determined thermal efficiency of the underlying energy sources.</li>
+<li>Conversion used is 1 Toe = 41.86GJ</li>
+</ul>
+<p>[^1] BP Statistical Review https://www.bp.com/content/dam/bp/business-sites/en/global/corporate/pdfs/energy-economics/statistical-review/bp-stats-review-2022-full-report.pdf</p>
+</body>
+</html>

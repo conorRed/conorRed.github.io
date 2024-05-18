@@ -1,0 +1,4 @@
+- Should watch some #spelunking talks
+- **Static assets** are object you send to the user that the server does not change. Images are an example of **static assets**
+    - Look at reported slow times
+    - Gradle vs pom xml

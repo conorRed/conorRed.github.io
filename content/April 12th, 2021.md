@@ -1,0 +1,2 @@
+- [[thoughts 🤔]] it occurs to me that some people are gifted at things, for instance, maybe the reason I was drawn to art on top of my interest was my ability at a base level seemed to me, greater than that of the others in my class. It gave me a chance. It could be similar with a field like physics. Who's to say if you dont try hard enough that you can do it too. If the curiosity is there. Like sport too.
+-

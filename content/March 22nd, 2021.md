@@ -1,0 +1,10 @@
+- Follow up about pager duty
+- Working on pseudo artefact stuff
+- Read an article from Una Mullaly about coping and determining your response when you cant control things. Dont really feel theres too much in it. I cant help but feel that accepting the situation at the moment is not the solution. Although it is useful to remind myself that I can control how I react to the current situation.
+- {{[[DONE]]}} Look at the EU vaccine supply problem Could start [here](https://www.nytimes.com/2021/03/20/world/europe/europe-vaccine-rollout-astrazeneca.html)
+    - "__“They assumed that simply contracting to acquire doses would be enough,” recalled Dr. Slaoui, whom President Donald J. Trump hired to speed the vaccine development. “In fact what was very important was to be a full, active partner in the development and the manufacturing of the vaccine. And to do so very early.”__"
+    - Europe had a heavy focus on the price of the vaccine
+    - The US signed away property rights and liability to the vaccine companies
+    - We look to be 5 weeks behind the US
+- #DailyThoughts Listening to Ryan Hall this morning on the Lex Fridman podcast. He raised a good point about trying to solve these super human problems where the solution is probably more local. Climate change as an example. But Lex, and I'm kind of paraphrasing had an interesting response in terms of exploring those who do strive to do big things, Musk, Jobs etc. and their importance too in terms of solving anything. I guess its just interesting to look at the hypocrisy that might be present in the issues we want to solve but also the importance of having that bigger picture view, of tackling the impossible.
+- Read McWilliams article about the Euro which I didnt really understand.

@@ -1,0 +1,8 @@
+- [Key ideas (80,000 hours)](https://80000hours.org/key-ideas/)
+    - Impartiality : "Putting impartiality and welfarism together means that, roughly, how much positive difference an action makes depends on how it increases peoples’ welfare, and how many people are helped, no matter when or where they live."
+    - The most effective ways to help usually seem different. Expected impact follows a fat tail distribution where the best outcomes could be thousands of times the average.
+    - Considering counterfactuals (what would be the case if I didnt help or perfom this action)
+    - I think longtermism is a shift in thinking in terms of what can I do to help now to what is most likely to help for the longest time into the future or how to I help the future go well. This is based on the fact that if we expect to live another billion years there will be a lot more people in the future to think about
+    - Raise the idea of neglectfulness being a sign where impact is high. 
+    - They list general areas with further reading. I find that I might have to make my own mind up and what I feel is meaningful as opposed to being told, although the resources could provide clarity on whether it is or isn't meaningful.
+    - 

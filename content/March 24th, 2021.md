@@ -1,0 +1,11 @@
+- Variadic #Go
+    - ... variadic in go. May be invoked with 0 or more parameters
+    - [...] specifies an array length equal to maximum index element + 1
+    - if variadic passed as argument with no type, no new slice of type []T is created
+- Thinking about better decision making in large systems. The goal wouldn't really be a product, would it? more a way of thinking I would assume. Some sort of consensus system.
+- seedify.fund decentralized incubator, interesting
+- {{[[TODO]]}} [Why Generics](https://blog.golang.org/why-generics)
+    - #Go In Go you can write a single function that works for different types by defining a common interface type.
+    - Kind of an argument for generics, not really of too much interest for me atm, maybe some other time
+- {{[[TODO]]}} Read through GO lang spec
+- Struggled to create deploy manifest and pseudo artifact

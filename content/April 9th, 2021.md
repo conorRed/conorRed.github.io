@@ -1,0 +1,13 @@
+- Look up possibility of masters
+    - Enrolled in coursera course
+- Look at writing email for advice.
+- Figure out wtf perpetual motion is
+- sonarqube?
+    - __SonarQube is an open-source platform developed by SonarSource for continuous inspection of code quality to perform automatic reviews with static analysis of code to detect bugs, code smells, and security vulnerabilities__
+- [[Kubernetes]] Ingress: An API object that manages external access to the services in a a cluster, typically HTTP.
+    - exposes routes from the outside to services within the cluster.
+    - An ingress controller is usually responsible for fulfilling the Ingress, usually with a load balancer
+    - The Ingress spec has all the information needed to configure a load balancer or proxy server. Most importantly, it contains a list of rules matched against all incoming requests.
+- [[kubernetes]] [[service]] An abstract way to expose an application running on a set of Pods as a network service.
+    - Defines a logical set of Pods and a policy by which to access them.
+- 

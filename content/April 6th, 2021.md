@@ -1,0 +1,4 @@
+- Product is merit, distribution is connections
+- [[physics]] [[nucleur physics]] What is a proton? 
+    - Most explanations of the discovery of the proton involves using ionized gases, or knowledge of other elements. How did we get that knowledge?
+        - 

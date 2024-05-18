@@ -1,0 +1,11 @@
+- What does computability mean in our sense?
+- Is it more Godel that relates to us?
+- Proportionality
+    - A constant comes from some ratio of proportionality
+    - Concept Im currently struggling with in [[Transmission of Information]]
+    - __  Indeed, the test of whether two variables are in direct proportion is whether they have a constant ratio. In other words, if we divide the value of one variable by another, do we obtain the same value each time? __
+- Oh boy im in way over my head here
+- I guess the main question is more creating mental processes on a computer ? How do we create symbols on the medium that is the computer?
+- What are the first principles. We have the medium and the symbols. I think this is separate from the computing sense. The communication and the computing are interlinked though.
+- [[computers]] [[logic]] Instructions as numbers
+    - My main confusion is the fetch cycle. Its that idea that something can fetch

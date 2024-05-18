@@ -1,0 +1,3 @@
+- Point of view is worth 80 IQ points. Context is powerful (da vinci).
+- Read about the vulnerabilities in global supply chain based on suez canal incident. Its interesting always i suppose to get an insight into the dependencies of our modern world.
+- 

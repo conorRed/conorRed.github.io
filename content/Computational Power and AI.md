@@ -1,0 +1,31 @@
+---
+id: Computational Power and AI
+aliases:
+  - Computational Power and AI
+tags:
+  - article
+---
+
+# Computational Power and AI
+
+Computation refers to a _stack_ :
+
+- Chips, such as GPU's.
+* Software to increase usage of these chips.
+* Domain Specific languages.
+* Data management software.
+
+FLOPS/s is the rate measure for the amount of floating point operations a resource can carry out in a second.
+
+>  the amount of compute used by AI models doubled in about 21.3 months; since
+>  deep learning as a paradigm took hold around 2010, the amount of compute
+>  used by models started doubling in only 5.7 months
+
+They reference Sara Hooker, saying that she theorises that research ideas win
+when they are associated with current hardware and software computer
+capabilities.
+
+So it's a dynamic where the software in deep learning was slowly making
+progress and once the incentive is created to use hardware it just takes off.
+
+

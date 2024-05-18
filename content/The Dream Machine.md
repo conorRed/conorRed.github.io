@@ -1,0 +1,28 @@
+- #Author M. Mitchell Waldrop
+- #ThoughtsSoFar 16/3
+    - Its interesting to note that I actually started reading this book on the day 'lick' was born. Mar 11.
+    - The first thing read about its a brief synopsis of Licks character. Here I just took on what I could noting the 'definite' characteristics, getting a feel for who this person might have been. I was kind of struck by the hitting the head on the organ analogy leading to, in Lick's own words a key insight "Always be extremely careful in your work-and in your proclamations of faith." Just seemed like a weird lesson
+    - Its interesting to read about his career trajectory in psychology kind of wondering how the hell we might end up with the internet.
+    - Lick seems to have playful character always jovial and questioning things but never seemingly serious. Interesting trait I guess maybe its easier to get people to say what they feel the more likely you look like you dont care what they say, the more likely you'll brush it off.
+    - The dungeon is also this environment of originality of intense intellectual efforts.
+    - Transition to the development of MIT after Lick attends a lot of Norbert Wieners talks.
+    - A really independent genius, eccentric 
+    - #Quote "__the thought of every age is reflected in its technique__"
+        - Really interesting as Im reading HWP at the moment and seeing how malleable we are as a collective over time.
+    - Wiener thinks that the dominant sciences of the past focused on the physical 'system' of how things worked. Whereas in the future the central sciences would increasingly deal with the system level issues
+    - Looking at life and the mind, the emergent systems or things. Wiener thought a Grand Unified Theory of behaviour could be found in the underlying themes of __communication__ and __control__
+    - Wiener was looking at computers from Vannevar Bush who invented the analog differential analyser 
+    - Bush published a very prescient article about the furture of the gathering of information in his systems with links modelling it on the idea of association in the human mind. Appeared in the Atlantic Monthly under the title "As we may think"
+    - He managed to be both too hfar behind the times (his analog approach unworkable) and too far ahead because the newly emerging digital technology was hopelessly immature.
+    - Interesting quote here when Wiener is proposing working on computers to Bush 
+        - "__the modern digital computer is actually a combination of at least half a dozen separate inventions, most of which involved not just another gadget but a shift in the way thought about computing__"
+        - An example given of the advantages of the analog computer over the digital at the time
+    - Claude Shannon worked for Bush and looked at the similarity between relay switches and symbolic logic
+    - "Any desktop adding machine could do simple addition and subtraction; a relay circuit could __decide__"
+    - Its mad to think about this line of thought and how important it is although it isn't used straight away and its just one man.
+    - Waldrop goes through the different transitions then which I found quite interesting. From decimal to binary which greatly simplified things in the Shannon sense. How would it work with binary[[?]]
+    - Then a transition from mechanical to electrical
+    - And then (possibly the most important) a shift from operator supervised to programmable. 
+    - This leads into Von Neumann who broke up the modules of the computer in his EDVAC paper after having a look at the ENIAC. Specifically the separate of memory from the computer meant that the computer became dictated by what was stored in memory not necessarily what it was factory set to do.
+    - Led from the idea that humans can "only punch keys so fast". John Mauchly postulated a vacuum tube computing machine which became the ENIAC
+    - Then we have a brief summary of Turing to set up the idea of computability which I still dont really understand. The idea that a computer (as defined by Turing) can decide given a program (or number) if it will complete. AKA if it is true. There was an upper limit as to what machines (and us ) could do.

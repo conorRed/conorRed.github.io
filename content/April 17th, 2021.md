@@ -1,0 +1,18 @@
+- [Why no one has replaced goodreads](https://uxdesign.cc/why-has-no-one-made-a-better-goodreads-dfc9cb9e149a)
+    - Goodreads integrates with the search for books through google
+- #career self study to upskill
+- invariant explanations as the key to scientific discovery
+    - also that each next step in the explanation is a function of the previous
+- maximize user happiness in unscalable ways - pcol
+- ambition of software on society. To filter out noise like early days
+- #career physics GRE. standardised test.
+- #career self study could be the way https://www.susanjfowler.com/blog/2016/8/13/so-you-want-to-learn-physics
+    - #career could I join activities in this area?
+    - 1ECT credit represents 20-25 hours of student input
+    - A year is about 60ECT's so 1200-1300 hours. General goal I would say.
+    - Sun Apr 18 to Tue Aug 31= 135 days or 4 months 13 days
+    - roughly 325 hours a month. ~17 weeks ~77 hours a week. 2hrs a day, 4 on weekends? Just too much work. At the above, I'll get about 338hrs done
+    - Can I find someone to talk to?
+    - https://ocw.mit.edu/courses/audio-video-courses/#physics
+    - I might pick up some of the classical mechanics fast enough though
+    - https://www.khanacademy.org/science/ap-physics-1

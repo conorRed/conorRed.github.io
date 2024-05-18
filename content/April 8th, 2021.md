@@ -1,0 +1,8 @@
+- [[electron]] Charge of a monovalent ion. Charge, as in its effect in force field. Initially thought to be fluids that __surround__ objects (?) and could be positively (attractive) or negatively charge (Benjamin Franklin) 
+    - Electric fluid could flow through some things, but not through others.
+    - Being able to reason it out, something not understood by the elite (Franklin and emancipation)
+    - Attempts to explain lightning. Revealed lightning for what it really was. A shock. Electricity is a force of nature to be tapped.
+    - Modern equivalent of a leyden jar is a capacitor
+    - If the jar was held in the hand as oppossed to placed on an insulator, positive charge would build up through your hand from the ground with the accumulating negative charge in the charge. (As opposed to a small amount if your hand wasn't present.)
+    - Cavendish showed that a torpedo fish __made__ electricity
+    - Voltas pile to determine animate electricity

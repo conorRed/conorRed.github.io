@@ -1,0 +1,148 @@
+
+Biofuels are any fuel whose energy is obtained by biological carbon fixation.
+
+Recently living things are the biomass used to get this energy. This could be wood or oils or algae all different types
+of biomass. When these are used for energy they are considered biofuels.
+
+* Lignin seems a general term for a polymer found in biomass. Lignin binds cellulose bundles together. Needs to be
+  broken down. Depending on type of lignin, can be broken down in different ways.
+* Cellulose is a specific type of polymer. C6H10O5
+
+## Biofuels
+
+* Ethanol (replace gasoline).
+* Biodiesel
+* Methanol (replace methane).
+* Biobutanol (replace gasoline/butane).
+
+# 1st generation
+
+* Vegetable oils.
+* Sugars. Sugar cane, soy beans. Corn.
+* Processed in different ways. One by transesterifaction for bio oils, the other by hydrolysis or fermentation.
+* Hydrolysis is the breakdown of polysaccharides into simpler sugar units by water. Typically catalysed by an acid but also by
+  enzymes in the case of the body.
+* Fermentation also breaks down sugars by the metabolic processes of yeast.
+* Transesterificatoin is replacement of the glycerol with a methanol group.
+
+# Hydrothermal processing
+
+* Hydrothermal processing involves heating aqueous slurries of biomass or organic wastes at elevated pressures to
+  produce an energy carrier with increased energy density. 
+* https://www.youtube.com/watch?v=3K1zWAYDvMA
+  
+# Conversion
+
+* The processes involved in conversion are commonly classified as:
+    * Thermo-chemical (e.g. Pyrolysis, gasification).
+    * Biochemical (e.g. Fermentation).
+    * Physio-chemical (e.g. transesterifaction).
+
+
+## What are the nutrients that life (the biosphere) needs?
+
+* The mnemonic: CHNOPS (Carbon, Hydrogen, Nitrogen, Oxygen, Phosphorus, Sulfur).
+* So you've a water cycle (H2O), carbon cycle (C), nitrogen cycle, phosphorus cycle, sulfur cycle.
+* N and S are big components in protein. Phosphorus needed for atp.
+* Abiotic are the non biotic parts of the planet. The atmosphere, lithosphere
+
+## Why Carbon
+
+* First things is structure, so immediately, you rule out all atoms that are not good at forming covalent bonds.
+* If you get rid of big atoms, that don't hold their valence electrons too tightly, you're left with CHNOPS and silicon.
+* Silicon is the only other element that can support scaffolds (2d and 3d structures). Carbon only makes up 0.02% of the
+  earth's crust and silicon makes up 28%. Most silicon scaffolds are unstable with water.
+  
+# Life cycle Assessment Biomass
+
+Relate science to policy and politics.
+
+* Land usage change: Growing biomass for biofuels can displace food production. It can cause existing non-agricultural
+  land to be converted to agricultural land to keep up with demand. This is indirect land use change.
+* Because trees absorb CO2 from the atmosphere, removing them for biofuel production may result in an increase in net
+  greenhouse gases instead of a decrease.
+* The RED and FQD both restrict production of biofuels on land with high biodiversity status and/or high carbon content.
+* RED II pushes towards the use of non-feedstock biomass to account for land use change problems.
+
+## LCA
+
+* Evaluating the energy and resource consumption and all pollutant emissions over the entire life cycle needed to
+  satisfy a defined function (e.g. filling up a tank with 1MJ of energy at a filling station).
+* Inputs and outputs are analysed to determine overall benefits.
+* Main emission sources in biofuel:
+    * Production of raw materials.
+    * Processing/conversion.
+    * Transport (and storage).
+    * Distribution of fuel to consumer.
+    * Consumer fuel use.
+* The reference flow is the physical flow of energy or materials needed to achieve a functional unit.
+* A functional unit is used to compare processes under study with the same function.
+* A reference flow provides a use case example (I think).
+* The _product system_ should include all processes required to perform functional unit. System boundaries put a limit
+  on whats included here.
+* Why focus on advanced biofuels:
+    * Stop competition with food.
+    * Waste based biofuels would otherwise be landfilled, burned or left to decay, resulting in GHG emissions. 
+    * Algae have potential for higher yield.
+    * Residual biomass (from logging etc.) can be used for conversion.
+    * Use of marginal land (not usable for food) for developing fuels.
+
+# Hydrogen
+
+* In general, the notes talk about the bond dissociation energy of H2, but I don't see where this is explicitly done
+  for hydrogen power. It make sense that this makes it very energy dense but where is the process for this dissociation
+  taking place?
+* Electricity is proving relatively easy to decarbonise. Transportation and heating, not so much.
+* Hydrogen combustion is less efficient than a fuel cell and releases NOx so it's not expected to be a replacement in
+  this sense for ICE's.
+* Fuel cells is the creation of current through 'reverse' electrolyses. 
+    * A current is generated by dissociating the electrons from input hydrogen. The ions of hydrogen pass through an
+      electrolyte and the electrons through the external circuit to do work.
+* Most hydrogen today is produced through steam reformation from methane. Syngas, a mix of CO, CO2 and H2. Have to
+  figure out a way to do the endothermic process of getting hydrogen with clean fuels. 
+    * Hydrogen more naturally occurs bonded in things like water and methane.
+  
+## Production
+
+* Centrally, or distributed. Large scale benefits from economies of scale but comes with high capital costs. Central
+  production is needed to really get it started in widespread use.
+* **Thermal production**: Steam reforming, reacting hydrocarbons with water. This is endothermic and requires a catalyst
+  (like Nickel also). Temperatures of 800C or so are needed.
+* **Electrolytic**: Electricity used to split water into hydrogen and oxygen. Split water at the anode, the electrons
+  flow through the external circuit and recombine of the other side to form H2. Operate at about 100C. There are also
+  high temp. cells. PEM and alkali set ups more suitable for renewables and distributed production.
+* **Photolytic**: Use energy from the sun directly to power splitting. Algae and solar cells.
+* Catalysts play a key role as they are often critical elements like platinum. There is research into catalyst design.
+
+## Storage
+
+* Liquefaction requires temperatures of -273C.
+* Compressed hydrogen maintained at around 700bar which is not too high for transmission but very high for transport
+  use.
+* Transport by tanker is currently most economically viable. Once hydrogen energy market exceeds 10% gas pipe
+  infrastructure is expected to become viable.
+
+* In general, the supply of catalyst is a problem.
+* Environmental factors like cold temperatures freezing the water generated is a problem.
+* The general source of H2 is mainly using fossil fuels.
+
+# Anki cards
+
+* What is a biofuel?
+    * any fuel whose energy is obtained by biological carbon fixation; i.e. fuels derived from biomass
+* What are the 4 components of LCA?
+    * Goal/scope definition.
+    * Inventory analysis.
+    * Impact assessment.
+    * Interpretations at each of these steps.
+* What is a functional unit in LCA analysis?
+    * The ability of a system to carry out some defined function.
+    * What is the _magnitude_ of service.
+    * e.g. transport fuel must move a vehicle a certain distance per unit mass/volume, should not damage engine etc.
+* What is arguable the most important component of LCA analysis?
+    * A functional unit.
+* What is the average thermal energy from biomass combustion according to suppl. notes paper?
+    * 20MJ/kg.
+* What is pyrolysis in a biomass processing context?
+    * The conversion process of specific biomass into liquid (bio-oil), solid (charcoal), and gaseous (combustible gas)
+      products through partial combustion at temperatures around 500 °C and in the absence of oxygen.

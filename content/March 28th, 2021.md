@@ -1,0 +1,3 @@
+- Hopefully work through some Ben Eater videos to understand the transitions in Dream machine
+    - Resistors. Try and abstract electronics details maybe. 
+    - Try and watch one ben eater vid each day this week

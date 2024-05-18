@@ -1,0 +1,16 @@
+- Autor: Richard Hamming
+- Limits of AI
+    - Hamming thinks its more likely for AI to be complimentary to humans in the highest space of things. And that this should be the goal. He uses maths and simplification (which is based on context) and medicine (doctors) as an example
+    - __"That is another example of what I have been repeatedly saying: when you go to machines you do and equivalent job, not the same one"__ e.g. cleaning up the deck of a ship, you might step over random obstacles in the environment, this might escape your idea of what the job is, so often times this is actually part of the job for the robot.
+    - __"artificial intelligence is not a subject you can afford to ignore; your attitude will put you in the front or the rear of the applications of machines in your field"__
+    - The idea of logical novelty as opposed to psychological novelty. I intuit this as the rules of logic i.e. implication and the results or derivations from those rules i.e. all mathematics is psychological novelty. Hamming talks about monkeys on a keyboard in infinite time producing Shakespeare. Free will, randomness.
+    - "__I suggest you pause and have two discussions with yourself on the topic "can machines think?__"
+        - Hamming makes some really interesting observations showing to counters to a lot of them. Encouraging the reader (me) to think about these things, make up your own mind and have reasons why.
+- n-dimensional space
+    - Design problems are n dimensional, one dimension for each design parameter
+    - Lots me with the maths in this chapter. Should have a go at it.
+- Didnt understand coding theory first part (the proofs). I skipped the second coding theory chapter too about huffman encoding
+- Error correcting codes
+    - Developed due to an emotional reaction (sick of computer breaking)
+    - Prepared (familiar with parity checking)
+    - Pretty interesting to read how he develops it, he uses what I would consider fairly hardcore maths, which Im too lazy to try to understand at the moment.

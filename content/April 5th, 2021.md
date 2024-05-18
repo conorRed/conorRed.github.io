@@ -1,0 +1,11 @@
+- Maybe I should ask for advice of some expert? 
+- [Limits of Logic](https://www.youtube.com/watch?v=V9ohtKameio)
+    - We dont know necessarily how long a string in proof will get, nor do we know how many steps we are going to use. How many times we will infer from axioms.
+    - How could self referentially systems come up in statements only talking about integers and their properties?
+        - __Well formed vs theorems__ Theres no unpredictability to whether a formula is well formed. Via recursive breakdown into simpler parts
+        - Some properties of numbers can be tested quickly, like is x a fibonacci number, you could calculate fibonacci sequence up to around x and check. Same with checking if x is prime.
+        - Collatz number involves going along a path to check by a set of rules 
+        - Integers could simulate things that weren't mathematical objects. The process of creating a proof being a mathematical process. Manipulation of symbols is a mathematical process
+        - For instance if you encoded a piece of music as a large integer, what kind of questions could you ask about the piece of music/the integer? could you answer qusetions like who wrote it? etc., or something trivial like, how many notes are in the piece would be easier
+        - If you encoded a string of symbols (like the golbach conjecture) as a large integer. If we asked questions like, is it true or false, is it trying to say this or that.
+        - Is this string a theorem. With numbering acting isomorphically to statements. A theorem is a mathematical notion. A property of one of these isomorphic numbers

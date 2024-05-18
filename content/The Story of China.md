@@ -1,0 +1,5 @@
+- #Author [[Michael Wood]]
+- Fall of the [[Tang]] dynasty
+    - [[Emperor Wuzong]] religious persecution of buddhists
+    - The An Lushan Rebellion was a devastating rebellion against the Tang dynasty of China; it significantly weakened the dynasty.
+    - The power of provincial governors increased as imperial troops crushed rebels  taking administrative powers away from scholarly officials.Î

@@ -1,0 +1,21 @@
+- Is the end of the world at hand? Robert M. Solow
+    - The growth question as seemingly just increasing consumption
+    - Solow starts by saying we would still have complaints about quality of life even if the growth question never arises.
+    - Inequity of income. Economic growth would mean there is a higher standard of living at the bottom of the ladder as opposed to some shift in opinion to redistribute at the top.
+    - "We have growth with or without equity; and we can have stagnation with or without equity" so the idea of equity and growth are not.
+    - Growth, in the view that we sacrifice some labour and resources to build something like roads for people who aren't even born yet. Investment is another example. In under-developed countries this is a difficult decision. Do they use newly gained foreign currency for industrial machinery or for consumer goods for the here and now?
+    - Trading current satisfaction for future satisfaction. As opposed to mixing in quality of life
+    - Aims to analyse the Doomsday model of limited resources and increasing consumption
+    - Gross national product (GNP) is an estimate of total value of all the final products and services turned out in a given period by the means of production owned by a country's residents.
+    - Bit confused by productivity increases in natural resources. Should it not be going down? output/employment would increase but thats not good right?
+        - So we could take the GNP of coal and divide it by the amount of coal to get the output in monetary terms of a unit of coal
+        - Real GNP doubled between 1950 and 1970 (things got more expensive) but consumption of iron increased 20 percent in that time. So productivity increased.
+        - So you would assume that consumption would follow output. But it increased a percentage of it. Meaning that the amount of resource x needed at 
+            - we had x at time t of a resource. Gross demand or consumption doubled at time t1. But the amount of x needed was just 20% more. That means we 'saved' about 80% of the resource.
+    - So the doomsday model would allow one static productivity value to a resource. Why shouldn't each unit of a resource get more productive
+    - Whats do GNP growth really mean?
+    - GNP vs GDP
+        - GNP output of production owned by countries residents
+    - Links to inflation and fundamental understanding of growth
+    - resource linkage to products and services
+    - 
