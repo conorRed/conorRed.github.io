@@ -1,7 +1,7 @@
 ---
 title: How to Do Great Work
 author: Paul Graham
-tags: career
+tags: [career]
 ---
 
 ## Great Work

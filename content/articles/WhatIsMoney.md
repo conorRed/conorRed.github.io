@@ -1,3 +1,7 @@
+---
+title: What is Money
+tags: [article, economics]
+---
 # What is Money?
 https://www.lynalden.com/what-is-money/
 
@@ -42,7 +46,7 @@ trouble.
 * Technological asymmetries meant that for these primitive commodity monies locals were trading something valuable for
   something less valuable over time.
 * The notion of the petroldollar, that the US made a deal with Saudi Arabia that all oil is priced in dollars creating a
-  general global demand for dollars. 
+  general global demand for dollars.
 * This caused the US currency to be very strong so imports increased and the US has been running more and more of a
   deficit ever since (some evidence for the existence of this system).
 * https://www.lynalden.com/fraying-petrodollar-system/

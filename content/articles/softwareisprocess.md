@@ -1,7 +1,7 @@
 ---
 Title: Why Doesn't Software Show Up in Productivity?
 author: Austin Vernon
-tags: [austin-veron, article]
+tags: [austin-veron, article, programming, software-engineering]
 ---
 
 https://austinvernon.site/blog/softwareisprocess.html

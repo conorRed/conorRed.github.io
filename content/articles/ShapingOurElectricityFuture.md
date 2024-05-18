@@ -1,5 +1,6 @@
 ---
 title: Shaping our Electricity Future
+tags: [energy]
 ---
 https://www.eirgridgroup.com/site-files/library/EirGrid/Shaping_Our_Electricity_Future_Roadmap.pdf
 
@@ -40,7 +41,7 @@ trying to build trust between EirGrid and the public.
 * How and where the electricity is generated.
 * How and where electricity is connected to the grid.
 * How electricity is bought and sold.
-* How electricity is used. 
+* How electricity is used.
 
 ## Feedback driving decisions
 
